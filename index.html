@@ -168,18 +168,17 @@
       display:flex; align-items:center; justify-content:center;
       overflow:hidden;
     }
-    /* Layered CSS background — no external image dependency */
+    /* Color gradient overlay on top of the real photo */
     .hero-bg {
-      position:absolute; inset:0;
+      position:absolute; inset:0; z-index:1;
       background:
-        radial-gradient(ellipse 80% 80% at 20% 60%, rgba(11,61,145,.75) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 60% at 80% 20%, rgba(0,201,177,.35) 0%, transparent 55%),
-        radial-gradient(ellipse 100% 100% at 50% 120%, rgba(0,201,177,.25) 0%, transparent 50%),
-        linear-gradient(175deg,#020c1b 0%,#062245 40%,#073d5a 65%,#05503b 100%);
+        radial-gradient(ellipse 70% 70% at 15% 60%, rgba(11,61,145,.55) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 80% 20%, rgba(0,201,177,.2) 0%, transparent 55%),
+        radial-gradient(ellipse 80% 80% at 50% 110%, rgba(0,201,177,.15) 0%, transparent 50%);
     }
-    /* Animated shimmer layer */
+    /* Animated shimmer layer — sits above photo, below text */
     .hero-shimmer {
-      position:absolute; inset:0;
+      position:absolute; inset:0; z-index:2;
       background:
         radial-gradient(ellipse 40% 30% at 30% 40%,rgba(0,201,177,.08) 0%,transparent 70%),
         radial-gradient(ellipse 60% 40% at 70% 60%,rgba(11,61,145,.1) 0%,transparent 70%);
@@ -190,12 +189,12 @@
       100% { transform:scale(1.2) rotate(3deg); opacity:1; }
     }
     .hero-overlay {
-      position:absolute; inset:0;
-      background:linear-gradient(to bottom,rgba(6,15,30,.2) 0%,transparent 40%,rgba(6,15,30,.6) 100%);
+      position:absolute; inset:0; z-index:3;
+      background:linear-gradient(to bottom,rgba(6,15,30,.25) 0%,transparent 40%,rgba(6,15,30,.65) 100%);
     }
 
     /* Bubbles */
-    .bubbles { position:absolute; inset:0; pointer-events:none; }
+    .bubbles { position:absolute; inset:0; pointer-events:none; z-index:4; }
     .bubble {
       position:absolute; bottom:-60px; border-radius:50%;
       background:rgba(0,201,177,.12);
@@ -211,7 +210,7 @@
 
     /* Hero content */
     .hero-content {
-      position:relative; z-index:10;
+      position:relative; z-index:6;
       text-align:center; padding:2rem;
       max-width:920px;
     }
@@ -276,6 +275,23 @@
     /* Hero wave */
     .hero-wave { position:absolute; bottom:-1px; left:0; width:100%; z-index:5; }
 
+    /* ---- Hero real photo layer ---- */
+    .hero-photo { position:absolute; inset:0; z-index:0; overflow:hidden; }
+    .hero-photo img { width:100%; height:100%; object-fit:cover; object-position:center 55%; filter:brightness(.28) saturate(1.5); }
+
+    /* ---- Card images — dive sites ---- */
+    .card-img { margin:-2rem -2rem 1.4rem; height:180px; overflow:hidden; position:relative; border-radius:18px 18px 0 0; }
+    .card-img img { width:100%; height:100%; object-fit:cover; filter:brightness(.72) saturate(1.15); transition:transform .65s ease; display:block; }
+    .site-card:hover .card-img img { transform:scale(1.07); }
+    .card-img-grad { position:absolute; inset:0; background:linear-gradient(to bottom,transparent 40%,rgba(6,15,30,.88) 100%); pointer-events:none; }
+    .card-icon-over { position:absolute; bottom:12px; left:1.4rem; font-size:2.2rem; z-index:1; line-height:1; }
+
+    /* ---- Excursion card images ---- */
+    .exc-img-wrap { height:158px; overflow:hidden; border-radius:14px; margin-bottom:1.2rem; position:relative; }
+    .exc-img-wrap img { width:100%; height:100%; object-fit:cover; filter:brightness(.68) saturate(1.2); transition:transform .65s ease; display:block; }
+    .exc-card:hover .exc-img-wrap img { transform:scale(1.07); }
+    .exc-img-wrap::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,transparent 50%,rgba(6,15,30,.72) 100%); pointer-events:none; }
+
     /* =============================================
        ABOUT
     ============================================= */
@@ -292,16 +308,9 @@
     .about-img-box {
       width:100%; aspect-ratio:3/4; max-height:520px; border-radius:22px;
       overflow:hidden; position:relative;
-      background:linear-gradient(145deg,#062558,#073d5a,#04523e);
+      background:#062558;
       box-shadow:var(--shadow);
     }
-    .about-img-box::before {
-      content:''; position:absolute; inset:0;
-      background:
-        radial-gradient(ellipse 80% 60% at 50% 30%,rgba(0,201,177,.2) 0%,transparent 70%),
-        radial-gradient(ellipse 60% 80% at 20% 80%,rgba(11,61,145,.4) 0%,transparent 60%);
-    }
-    .about-img-emoji { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:7rem; z-index:1; }
     .about-badge {
       position:absolute; bottom:-18px; right:-18px;
       background:linear-gradient(135deg,var(--accent1),var(--primary));
@@ -735,6 +744,10 @@
      HERO
 ================================================ -->
 <section class="hero" id="home" aria-label="Hero">
+  <div class="hero-photo" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=1920&q=85"
+         loading="eager" fetchpriority="high" alt="">
+  </div>
   <div class="hero-bg"></div>
   <div class="hero-shimmer"></div>
   <div class="hero-overlay"></div>
@@ -790,7 +803,9 @@
 
       <div class="about-visual fade-right">
         <div class="about-img-box">
-          <div class="about-img-emoji" aria-hidden="true">🤿</div>
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80"
+               loading="lazy" alt="Scuba diver exploring the reef"
+               style="width:100%;height:100%;object-fit:cover;border-radius:22px;display:block;">
         </div>
         <div class="about-badge">
           <div class="bnum">5★</div>
@@ -848,31 +863,51 @@
 
     <div class="sites-grid">
       <div class="site-card fade-up">
-        <span class="site-icon">🏔</span>
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Maaya Thila coral reef pinnacle">
+          <div class="card-img-grad"></div>
+          <span class="card-icon-over">🏔</span>
+        </div>
         <h3>Maaya Thila</h3>
         <p>An iconic pinnacle dive site with intricate caves, dramatic drop-offs, and thrilling swim-throughs. One of the finest dive sites in the Maldives, teeming with marine life day and night.</p>
         <span class="site-tag">Pinnacle Dive</span>
       </div>
       <div class="site-card fade-up" style="transition-delay:.1s">
-        <span class="site-icon">🦈</span>
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Grey reef shark at Fish Head">
+          <div class="card-img-grad"></div>
+          <span class="card-icon-over">🦈</span>
+        </div>
         <h3>Fish Head (Mushimasmigili)</h3>
         <p>A UNESCO-recognised marine protected area famed for resident grey reef sharks and colossal schools of blueline snappers. An unforgettable drift dive experience.</p>
         <span class="site-tag">Marine Reserve</span>
       </div>
       <div class="site-card fade-up" style="transition-delay:.2s">
-        <span class="site-icon">🌀</span>
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1512578659172-63b14f231dc3?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Tropical reef fish at Hafsa Thila">
+          <div class="card-img-grad"></div>
+          <span class="card-icon-over">🌀</span>
+        </div>
         <h3>Hafsa Thila</h3>
         <p>A classic thila offering encounters with white-tip reef sharks, napoleon wrasse, and a stunning variety of reef fish in crystal-clear blue water.</p>
         <span class="site-tag">Reef Dive</span>
       </div>
       <div class="site-card fade-up" style="transition-delay:.1s">
-        <span class="site-icon">🦈</span>
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1504472478235-9bc48ba4d60f?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Shark at Ukulhas Shark Point">
+          <div class="card-img-grad"></div>
+          <span class="card-icon-over">🦈</span>
+        </div>
         <h3>Ukulhas Shark Point</h3>
         <p>Located at the harbour corner of Ukulhas, this thrilling site offers encounters with multiple shark species — a must for shark enthusiasts.</p>
         <span class="site-tag">Shark Dive</span>
       </div>
       <div class="site-card fade-up" style="transition-delay:.2s">
-        <span class="site-icon">🐟</span>
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Deep reef at Rasdhoo Madivaru">
+          <div class="card-img-grad"></div>
+          <span class="card-icon-over">🐟</span>
+        </div>
         <h3>Rasdhoo Madivaru</h3>
         <p>Famous for its resident population of grey reef sharks and exciting channel diving. Nutrient-rich currents attract spectacular pelagic marine life.</p>
         <span class="site-tag">Channel Dive</span>
@@ -954,31 +989,49 @@
 
     <div class="exc-grid">
       <div class="exc-card fade-up">
+        <div class="exc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Manta ray snorkeling Maldives">
+        </div>
         <span class="exc-icon">🦅</span>
         <h3>Manta Ray Snorkeling</h3>
         <p>Glide alongside majestic manta rays in their natural habitat. A bucket-list experience for every ocean lover.</p>
       </div>
       <div class="exc-card fade-up" style="transition-delay:.1s">
+        <div class="exc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1607153333879-c174d265f1d2?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Whale shark swimming in clear blue water">
+        </div>
         <span class="exc-icon">🐋</span>
         <h3>Whale Shark Safari</h3>
         <p>Swim with the ocean's gentle giants. North Ari Atoll is one of Earth's finest whale shark locations.</p>
       </div>
       <div class="exc-card fade-up" style="transition-delay:.2s">
+        <div class="exc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Sea turtle swimming in the ocean">
+        </div>
         <span class="exc-icon">🐢</span>
         <h3>Nurse Shark &amp; Turtle Tour</h3>
         <p>Snorkel with friendly nurse sharks resting on the reef and graceful sea turtles in the warm shallows.</p>
       </div>
       <div class="exc-card fade-up" style="transition-delay:.1s">
+        <div class="exc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1534483509719-3feaee7c30da?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Night diving underwater bioluminescence">
+        </div>
         <span class="exc-icon">🌙</span>
         <h3>Night Diving</h3>
         <p>Discover a completely different reef after dark — octopus, lobsters, sleeping fish, and stunning bioluminescence.</p>
       </div>
       <div class="exc-card fade-up" style="transition-delay:.2s">
+        <div class="exc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1548366086-7f1b76106622?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Fishing at sunset in the Maldives">
+        </div>
         <span class="exc-icon">🎣</span>
         <h3>Fishing &amp; BBQ</h3>
         <p>Traditional Maldivian fishing followed by a fresh sunset seafood BBQ right on the beach.</p>
       </div>
       <div class="exc-card fade-up" style="transition-delay:.3s">
+        <div class="exc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=600&q=75" loading="lazy" alt="Maldives island hopping turquoise water">
+        </div>
         <span class="exc-icon">🏝</span>
         <h3>Island Hopping</h3>
         <p>Explore uninhabited islands, pristine sandbanks, and nearby local villages to feel authentic Maldivian culture.</p>
