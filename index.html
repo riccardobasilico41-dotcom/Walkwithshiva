@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clinica S.Egidio – Osteopatia e salute integrata a Saronno. Un approccio costruito attorno alla persona, non al tempo della seduta.">
+  <meta name="keywords" content="osteopatia Saronno, clinica osteopatica, fisioterapia Saronno, posturologia, ATM cefalee, recupero funzionale, osteopata Saronno">
+  <meta property="og:title" content="Clinica S.Egidio | Osteopatia e Salute Integrata – Saronno">
+  <meta property="og:description" content="Un approccio costruito attorno alla persona, non al tempo della seduta.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1C3A2A">
+  <title>Clinica S.Egidio | Osteopatia e Salute Integrata – Saronno</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigazione principale">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Clinica S.Egidio – Home">
+        <span class="logo-mark" aria-hidden="true">S·E</span>
+        <span class="logo-text">Clinica S.Egidio</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#filosofia">La Clinica</a></li>
+        <li><a href="#chi-siamo">Chi Siamo</a></li>
+        <li><a href="#specialita">Specialità</a></li>
+        <li><a href="#esperienza">Esperienza</a></li>
+        <li><a href="#journal">Journal</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+
+      <a href="#contatti" class="btn btn-nav-cta">Prenota</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Apri menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu mobile">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-logo">
+        <span class="logo-mark">S·E</span>
+      </div>
+      <nav class="mobile-nav" aria-label="Menu mobile navigazione">
+        <a href="#filosofia" class="mobile-nav-link">La Clinica</a>
+        <a href="#chi-siamo" class="mobile-nav-link">Chi Siamo</a>
+        <a href="#specialita" class="mobile-nav-link">Specialità</a>
+        <a href="#esperienza" class="mobile-nav-link">Esperienza</a>
+        <a href="#journal" class="mobile-nav-link">Journal</a>
+        <a href="#contatti" class="mobile-nav-link">Contatti</a>
+      </nav>
+      <a href="#contatti" class="btn btn-primary mobile-cta">Prenota una valutazione</a>
+      <div class="mobile-address">
+        <span>Via Ferrari 17-19 · Saronno</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section id="home" class="hero" aria-label="Sezione principale">
+    <!-- Replace src with: assets/images/hero-reception.jpg -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grain"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-emblem animate-fade-up" style="animation-delay:0.2s" aria-hidden="true">
+        <span class="hero-emblem-mark">S·E</span>
+        <span class="hero-emblem-line"></span>
+        <span class="hero-emblem-name">CLINICA S.EGIDIO</span>
+        <span class="hero-emblem-city">SARONNO · ITALIA</span>
+      </div>
+
+      <h1 class="hero-title animate-fade-up" style="animation-delay:0.5s">
+        Clinica S.Egidio
+      </h1>
+
+      <p class="hero-subtitle animate-fade-up" style="animation-delay:0.7s">
+        Osteopatia e salute integrata a Saronno.<br>
+        <em>Un approccio costruito attorno alla persona,<br class="br-mobile"> non al tempo della seduta.</em>
+      </p>
+
+      <div class="hero-actions animate-fade-up" style="animation-delay:0.9s">
+        <a href="#contatti" class="btn btn-primary btn-lg">Prenota una valutazione</a>
+        <a href="#filosofia" class="btn btn-ghost-light btn-lg">Scopri la clinica</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll animate-fade-up" style="animation-delay:1.3s" aria-hidden="true">
+      <span class="scroll-label">Scorri</span>
+      <span class="scroll-track"><span class="scroll-dot"></span></span>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       PHILOSOPHY
+  ══════════════════════════════════════════ -->
+  <section id="filosofia" class="philosophy bg-forest" aria-labelledby="filosofia-title">
+    <div class="container">
+
+      <div class="philosophy-intro reveal">
+        <span class="label label-gold">La nostra filosofia</span>
+        <h2 id="filosofia-title" class="display-title text-cream">
+          Una medicina<br><em>dell'ascolto</em>
+        </h2>
+      </div>
+
+      <div class="philosophy-quote reveal" data-delay="1">
+        <blockquote>
+          <p>"La cura non inizia con la diagnosi.<br>Inizia nel momento in cui qualcuno si siede<br class="br-desktop">e decide di <em>ascoltare davvero</em>."</p>
+        </blockquote>
+        <div class="quote-ornament" aria-hidden="true"></div>
+      </div>
+
+      <div class="philosophy-body reveal" data-delay="2">
+        <p>Clinica S.Egidio nasce da una convinzione semplice: la qualità della cura dipende dalla qualità della relazione. In un sistema sanitario che spesso non ha tempo, abbiamo costruito uno spazio dove il tempo c'è — e viene dedicato interamente a te.</p>
+        <p>Non serializziamo i trattamenti. Non abbiamo protocolli fissi. Ogni persona che entra in questa clinica porta una storia unica, un corpo unico, un contesto di vita unico. Il nostro lavoro è comprendere quella complessità, non semplificarla.</p>
+      </div>
+
+      <div class="philosophy-values">
+        <div class="value-card reveal" data-delay="0">
+          <div class="value-number" aria-hidden="true">01</div>
+          <h3>Ascolto</h3>
+          <p>Ogni trattamento inizia con il tempo dedicato alla tua storia. Non al sintomo, ma alla persona che lo porta.</p>
+        </div>
+        <div class="value-card reveal" data-delay="1">
+          <div class="value-number" aria-hidden="true">02</div>
+          <h3>Approccio integrato</h3>
+          <p>La salute è sistemica. Non trattiamo sintomi isolati, ma comprendiamo il corpo nella sua totalità.</p>
+        </div>
+        <div class="value-card reveal" data-delay="2">
+          <div class="value-number" aria-hidden="true">03</div>
+          <h3>Qualità sul tempo</h3>
+          <p>Le sedute durano il tempo necessario, non quello conveniente. Ogni persona merita attenzione completa.</p>
+        </div>
+        <div class="value-card reveal" data-delay="3">
+          <div class="value-number" aria-hidden="true">04</div>
+          <h3>Personalizzazione</h3>
+          <p>Non esistono protocolli standard. Solo piani di cura costruiti specificatamente intorno a te.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       SPACES
+  ══════════════════════════════════════════ -->
+  <section id="spazi" class="spaces bg-cream" aria-labelledby="spazi-title">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">Gli spazi</span>
+        <h2 id="spazi-title" class="display-title">
+          La clinica
+        </h2>
+        <p class="section-desc">Ogni ambiente è stato progettato per creare un'esperienza di cura che inizia dal momento in cui entri.</p>
+      </div>
+
+      <div class="spaces-grid">
+
+        <article class="space-card space-card--large reveal" aria-label="Reception e Lounge">
+          <div class="space-card__image space-img--reception" aria-hidden="true">
+            <!-- Replace with: assets/images/reception.jpg -->
+            <div class="space-card__badge">
+              <span class="space-badge-num" aria-hidden="true">01</span>
+              Reception &amp; Lounge
+            </div>
+          </div>
+          <div class="space-card__body">
+            <h3>Reception &amp; Lounge</h3>
+            <p>Un ingresso pensato come anticamera del benessere. Luce naturale, materiali naturali, un silenzio che predispone alla cura. Il primo contatto con la clinica non inizia nella sala visita.</p>
+          </div>
+        </article>
+
+        <article class="space-card reveal" data-delay="1" aria-label="Stanze Cliniche">
+          <div class="space-card__image space-img--clinical" aria-hidden="true">
+            <!-- Replace with: assets/images/clinical-room.jpg -->
+            <div class="space-card__badge">
+              <span class="space-badge-num" aria-hidden="true">02</span>
+              Stanze Cliniche
+            </div>
+          </div>
+          <div class="space-card__body">
+            <h3>Stanze Cliniche</h3>
+            <p>Ambienti privati, attrezzati con strumentazioni di eccellenza. Progettati per il comfort del paziente e la concentrazione del clinico.</p>
+          </div>
+        </article>
+
+        <article class="space-card reveal" data-delay="2" aria-label="Corridoio Centrale">
+          <div class="space-card__image space-img--corridor" aria-hidden="true">
+            <!-- Replace with: assets/images/corridor.jpg -->
+            <div class="space-card__badge">
+              <span class="space-badge-num" aria-hidden="true">03</span>
+              Corridoio Centrale
+            </div>
+          </div>
+          <div class="space-card__body">
+            <h3>Corridoio Centrale</h3>
+            <p>Il cuore architettonico della clinica. Un percorso che connette gli spazi con continuità e dignità, dove il movimento tra un ambiente e l'altro è parte dell'esperienza.</p>
+          </div>
+        </article>
+
+        <article class="space-card space-card--wide reveal" data-delay="3" aria-label="Aree di Servizio">
+          <div class="space-card__image space-img--service" aria-hidden="true">
+            <!-- Replace with: assets/images/service-area.jpg -->
+            <div class="space-card__badge">
+              <span class="space-badge-num" aria-hidden="true">04</span>
+              Aree di Servizio
+            </div>
+          </div>
+          <div class="space-card__body">
+            <h3>Aree di Servizio</h3>
+            <p>Strutture accessibili e funzionali, progettate per garantire efficienza e discrezione nel supporto alla cura. Perché anche i dettagli contano.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       TEAM
+  ══════════════════════════════════════════ -->
+  <section id="chi-siamo" class="team bg-stone" aria-labelledby="team-title">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">Chi siamo</span>
+        <h2 id="team-title" class="display-title">
+          Le persone che<br><em>ti accompagnano</em>
+        </h2>
+        <p class="section-desc">Un team scelto non solo per la competenza clinica, ma per la capacità di ascoltare e costruire relazioni di cura durature.</p>
+      </div>
+
+      <div class="team-grid">
+
+        <article class="team-card reveal" data-delay="0">
+          <div class="team-card__photo">
+            <div class="team-photo-placeholder" aria-hidden="true">
+              <span>D.O.</span>
+            </div>
+            <div class="team-photo-ring" aria-hidden="true"></div>
+          </div>
+          <div class="team-card__body">
+            <span class="team-specialty">Osteopatia</span>
+            <h3 class="team-name">Dr. [Nome Cognome]</h3>
+            <p class="team-bio">Osteopata D.O. con oltre 12 anni di esperienza clinica. Specializzato nell'approccio cranio-sacrale e nella medicina osteopatica integrata. Lavora con pazienti di ogni età.</p>
+            <a href="#contatti" class="team-cta">Prenota una consulenza →</a>
+          </div>
+        </article>
+
+        <article class="team-card reveal" data-delay="1">
+          <div class="team-card__photo">
+            <div class="team-photo-placeholder" aria-hidden="true">
+              <span>F.T.</span>
+            </div>
+            <div class="team-photo-ring" aria-hidden="true"></div>
+          </div>
+          <div class="team-card__body">
+            <span class="team-specialty">Fisioterapia</span>
+            <h3 class="team-name">Dr.ssa [Nome Cognome]</h3>
+            <p class="team-bio">Fisioterapista specializzata nel recupero funzionale post-traumatico e nella riabilitazione sportiva. Approccio evidence-based, personalizzato, orientato al lungo termine.</p>
+            <a href="#contatti" class="team-cta">Prenota una consulenza →</a>
+          </div>
+        </article>
+
+        <article class="team-card reveal" data-delay="2">
+          <div class="team-card__photo">
+            <div class="team-photo-placeholder" aria-hidden="true">
+              <span>ATM</span>
+            </div>
+            <div class="team-photo-ring" aria-hidden="true"></div>
+          </div>
+          <div class="team-card__body">
+            <span class="team-specialty">ATM &amp; Cefalee</span>
+            <h3 class="team-name">Dr. [Nome Cognome]</h3>
+            <p class="team-bio">Specialista nei disturbi cranio-mandibolari e nelle cefalee di origine muscolo-scheletrica. Collabora con reti odontoiatriche specializzate per un approccio integrato.</p>
+            <a href="#contatti" class="team-cta">Prenota una consulenza →</a>
+          </div>
+        </article>
+
+        <article class="team-card reveal" data-delay="3">
+          <div class="team-card__photo">
+            <div class="team-photo-placeholder" aria-hidden="true">
+              <span>P.L.</span>
+            </div>
+            <div class="team-photo-ring" aria-hidden="true"></div>
+          </div>
+          <div class="team-card__body">
+            <span class="team-specialty">Posturologia</span>
+            <h3 class="team-name">Dr. [Nome Cognome]</h3>
+            <p class="team-bio">Posturologo certificato con esperienza in analisi biomeccanica e rieducazione posturale integrata. Riferimento per atleti, professionisti e lavoratori in posizioni statiche.</p>
+            <a href="#contatti" class="team-cta">Prenota una consulenza →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="team-note reveal">
+        Il team è in continua evoluzione. <a href="#contatti">Contattaci</a> per conoscere tutti i professionisti della clinica e trovare il percorso più adatto a te.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       SPECIALTIES
+  ══════════════════════════════════════════ -->
+  <section id="specialita" class="specialties bg-forest" aria-labelledby="specialita-title">
+    <div class="container">
+
+      <div class="section-header section-header--light reveal">
+        <span class="label label-gold">Le specialità</span>
+        <h2 id="specialita-title" class="display-title text-cream">
+          Un'offerta clinica<br><em>integrata</em>
+        </h2>
+        <p class="section-desc text-cream-muted">Ogni specialità è parte di un sistema interconnesso di competenze. La nostra forza è nella collaborazione tra discipline.</p>
+      </div>
+
+      <div class="specialties-grid">
+
+        <article class="specialty-card reveal" data-delay="0">
+          <div class="specialty-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="16" cy="5" r="3"/>
+              <path d="M16 9v10M13 12l-3 4h12l-3-4"/>
+              <path d="M13 27v-5M19 27v-5M11 22h10"/>
+            </svg>
+          </div>
+          <h3>Osteopatia</h3>
+          <p>Valutazione e trattamento osteopatico. Approccio strutturale, viscerale e cranio-sacrale per riequilibrare il corpo nella sua globalità.</p>
+        </article>
+
+        <article class="specialty-card reveal" data-delay="1">
+          <div class="specialty-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 3L4 18h12l-2 11 14-16H16l1-10z"/>
+            </svg>
+          </div>
+          <h3>Sport &amp; Performance</h3>
+          <p>Valutazione biomeccanica e recupero per atleti di ogni livello. Dalla performance alla prevenzione degli infortuni.</p>
+        </article>
+
+        <article class="specialty-card reveal" data-delay="2">
+          <div class="specialty-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="16" y1="3" x2="16" y2="29"/>
+              <line x1="10" y1="7" x2="22" y2="7"/>
+              <line x1="11" y1="16" x2="21" y2="16"/>
+              <line x1="12" y1="25" x2="20" y2="25"/>
+            </svg>
+          </div>
+          <h3>Posturologia</h3>
+          <p>Analisi posturale completa e rieducazione integrata. Intervento sui recettori posturali per un equilibrio duraturo nel tempo.</p>
+        </article>
+
+        <article class="specialty-card reveal" data-delay="3">
+          <div class="specialty-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="16" cy="16" r="12"/>
+              <path d="M11 20s2 3 5 3 5-3 5-3"/>
+              <circle cx="12" cy="12.5" r="1.5" fill="currentColor" stroke="none"/>
+              <circle cx="20" cy="12.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <h3>ATM &amp; Cefalee</h3>
+          <p>Diagnosi e trattamento dei disturbi cranio-mandibolari, cefalee e dolori facciali di origine muscolo-scheletrica.</p>
+        </article>
+
+        <article class="specialty-card reveal" data-delay="4">
+          <div class="specialty-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M27 3l-3 3M19.5 9.5a7 7 0 1 1-9.9 9.9L4 25l3 3 6-6a7 7 0 0 1 9.9-9.9L27 7l-3-3"/>
+              <path d="M12 12l8 8"/>
+            </svg>
+          </div>
+          <h3>Recupero Funzionale</h3>
+          <p>Riabilitazione post-traumatica e post-chirurgica. Percorsi personalizzati per un recupero completo e duraturo.</p>
+        </article>
+
+        <article class="specialty-card reveal" data-delay="5">
+          <div class="specialty-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 3C13 3 10 6 10 10c0 3 1.5 5 3 6l3 13 3-13c1.5-1 3-3 3-6 0-4-3-7-6-7z"/>
+              <circle cx="16" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <h3>Pediatrica</h3>
+          <p>Cure delicate per i più piccoli. Dall'infanzia all'adolescenza, supporto al corretto sviluppo psico-fisico.</p>
+        </article>
+
+        <article class="specialty-card specialty-card--accent reveal" data-delay="6">
+          <div class="specialty-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="16" cy="16" r="12"/>
+              <path d="M16 8c-4.5 0-7 3-7 7s2.5 7 7 7c0-3.5 2.5-7 7-7"/>
+              <path d="M16 22v-8"/>
+            </svg>
+          </div>
+          <h3>Benessere Integrato</h3>
+          <p>Percorsi di benessere che uniscono corpo, postura e qualità di vita. Un approccio olistico per stare meglio ogni giorno.</p>
+        </article>
+
+      </div>
+
+      <div class="specialties-cta reveal">
+        <a href="#contatti" class="btn btn-gold btn-lg">Scopri quale percorso fa per te</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       PATIENT JOURNEY
+  ══════════════════════════════════════════ -->
+  <section id="esperienza" class="journey bg-cream" aria-labelledby="journey-title">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">L'esperienza del paziente</span>
+        <h2 id="journey-title" class="display-title">
+          Il tuo percorso<br><em>di cura</em>
+        </h2>
+        <p class="section-desc">Un viaggio costruito passo dopo passo, sempre con te al centro.</p>
+      </div>
+
+      <div class="journey-timeline" role="list">
+
+        <div class="journey-step reveal" data-delay="0" role="listitem">
+          <div class="journey-step__marker" aria-hidden="true">
+            <span class="step-num">01</span>
+            <span class="step-line"></span>
+          </div>
+          <div class="journey-step__content">
+            <span class="journey-step__label">Primo incontro</span>
+            <h3>Ascolto</h3>
+            <p>Una consulenza iniziale dedicata interamente alla tua storia, alle tue esigenze e alle tue aspettative. Senza fretta, senza moduli standard. Solo ascolto autentico.</p>
+          </div>
+        </div>
+
+        <div class="journey-step reveal" data-delay="1" role="listitem">
+          <div class="journey-step__marker" aria-hidden="true">
+            <span class="step-num">02</span>
+            <span class="step-line"></span>
+          </div>
+          <div class="journey-step__content">
+            <span class="journey-step__label">Analisi approfondita</span>
+            <h3>Valutazione</h3>
+            <p>Un esame clinico completo che considera il corpo nella sua interezza, le sue compensazioni, la sua storia posturale e motoria. Non solo il dolore del momento.</p>
+          </div>
+        </div>
+
+        <div class="journey-step reveal" data-delay="2" role="listitem">
+          <div class="journey-step__marker" aria-hidden="true">
+            <span class="step-num">03</span>
+            <span class="step-line"></span>
+          </div>
+          <div class="journey-step__content">
+            <span class="journey-step__label">Costruito su misura</span>
+            <h3>Piano Personalizzato</h3>
+            <p>Un percorso terapeutico progettato specificamente per te. Con obiettivi chiari, tempi realistici e piena possibilità di adattamento nel corso del tempo.</p>
+          </div>
+        </div>
+
+        <div class="journey-step reveal" data-delay="3" role="listitem">
+          <div class="journey-step__marker" aria-hidden="true">
+            <span class="step-num">04</span>
+            <span class="step-line"></span>
+          </div>
+          <div class="journey-step__content">
+            <span class="journey-step__label">Attenzione totale</span>
+            <h3>Trattamento</h3>
+            <p>Sessioni complete, mai affrettate. Ogni trattamento riceve la stessa cura e attenzione, dalla prima all'ultima seduta. Il tuo tempo è rispettato.</p>
+          </div>
+        </div>
+
+        <div class="journey-step journey-step--last reveal" data-delay="4" role="listitem">
+          <div class="journey-step__marker" aria-hidden="true">
+            <span class="step-num">05</span>
+          </div>
+          <div class="journey-step__content">
+            <span class="journey-step__label">Nel tempo</span>
+            <h3>Continuità</h3>
+            <p>Follow-up regolari, aggiustamenti del percorso, supporto nel lungo periodo. La relazione con te non si conclude dopo la seduta. Siamo qui, anche dopo.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="journey-cta reveal">
+        <a href="#contatti" class="btn btn-primary btn-lg">Inizia il tuo percorso</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       JOURNAL
+  ══════════════════════════════════════════ -->
+  <section id="journal" class="journal bg-stone" aria-labelledby="journal-title">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">Journal</span>
+        <h2 id="journal-title" class="display-title">
+          Riflessioni sulla cura,<br><em>il corpo e il tempo</em>
+        </h2>
+      </div>
+
+      <div class="journal-grid">
+
+        <article class="journal-card journal-card--featured reveal">
+          <div class="journal-card__image journal-img--1" aria-hidden="true"></div>
+          <div class="journal-card__body">
+            <span class="journal-tag">Osteopatia</span>
+            <h3>Perché l'osteopatia non è solo per il mal di schiena</h3>
+            <p>L'osteopatia lavora sull'intero sistema corporeo. Come questo approccio può trasformare la qualità della tua vita quotidiana, ben oltre il sollievo dal dolore acuto.</p>
+            <div class="journal-card__meta">
+              <time datetime="2025-05">Maggio 2025</time>
+              <a href="#" class="journal-read-more">Leggi l'articolo <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="journal-card reveal" data-delay="1">
+          <div class="journal-card__image journal-img--2" aria-hidden="true"></div>
+          <div class="journal-card__body">
+            <span class="journal-tag">Filosofia della cura</span>
+            <h3>Il tempo della visita: perché un'ora fa la differenza</h3>
+            <p>In un sistema sanitario che corre, abbiamo scelto di fermarci. Il tempo dedicato a ogni paziente non è un lusso: è la condizione minima per una cura vera.</p>
+            <div class="journal-card__meta">
+              <time datetime="2025-04">Aprile 2025</time>
+              <a href="#" class="journal-read-more">Leggi l'articolo <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="journal-card reveal" data-delay="2">
+          <div class="journal-card__image journal-img--3" aria-hidden="true"></div>
+          <div class="journal-card__body">
+            <span class="journal-tag">Postura &amp; Vita Contemporanea</span>
+            <h3>Postura e digitale: il corpo nel mondo contemporaneo</h3>
+            <p>Come schermo, scrivania e smartphone stanno ridisegnando le nostre tensioni corporee — e cosa possiamo fare concretamente.</p>
+            <div class="journal-card__meta">
+              <time datetime="2025-03">Marzo 2025</time>
+              <a href="#" class="journal-read-more">Leggi l'articolo <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section id="contatti" class="contact bg-forest" aria-labelledby="contact-title">
+    <div class="container">
+
+      <div class="section-header section-header--light reveal">
+        <span class="label label-gold">Contatti</span>
+        <h2 id="contact-title" class="display-title text-cream">Inizia qui</h2>
+        <p class="section-desc text-cream-muted">Prenota una valutazione o contattaci per qualsiasi informazione. Risponderemo entro 24 ore.</p>
+      </div>
+
+      <div class="contact-layout">
+
+        <div class="contact-info reveal">
+
+          <div class="contact-info-block">
+            <h4>Dove siamo</h4>
+            <address>
+              Via Ferrari 17-19<br>
+              21047 Saronno (VA)<br>
+              Italia
+            </address>
+          </div>
+
+          <div class="contact-info-block">
+            <h4>Orari di apertura</h4>
+            <dl class="hours-list">
+              <dt>Lunedì – Venerdì</dt><dd>08:00 – 20:00</dd>
+              <dt>Sabato</dt><dd>08:00 – 14:00</dd>
+              <dt>Domenica</dt><dd>Chiuso</dd>
+            </dl>
+          </div>
+
+          <div class="contact-info-block">
+            <h4>Contatti diretti</h4>
+            <a href="tel:+39" class="contact-link contact-link--phone">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3a1 1 0 0 1 1-1h3l1.5 4-2 1.5a11 11 0 0 0 5 5L12 10l4 1.5v3a1 1 0 0 1-1 1C6.5 15.5 2 11 2 5V3z"/></svg>
+              +39 [numero]
+            </a>
+            <a href="mailto:info@clinicasegidio.it" class="contact-link contact-link--mail">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 5h16v12H2zM2 5l8 7 8-7"/></svg>
+              info@clinicasegidio.it
+            </a>
+          </div>
+
+          <a href="https://wa.me/39" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+            </svg>
+            Scrivici su WhatsApp
+          </a>
+
+        </div>
+
+        <div class="contact-form-wrapper reveal" data-delay="1">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Modulo di prenotazione">
+            <h3>Richiedi una valutazione</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">Nome <span aria-hidden="true">*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="Il tuo nome" required autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Cognome <span aria-hidden="true">*</span></label>
+                <input type="text" id="lastName" name="lastName" placeholder="Il tuo cognome" required autocomplete="family-name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="la.tua@email.com" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefono</label>
+              <input type="tel" id="phone" name="phone" placeholder="+39 000 0000000" autocomplete="tel">
+            </div>
+
+            <div class="form-group">
+              <label for="specialty">Specialità di interesse</label>
+              <div class="select-wrapper">
+                <select id="specialty" name="specialty">
+                  <option value="">Seleziona una specialità</option>
+                  <option value="osteopatia">Osteopatia</option>
+                  <option value="sport">Sport &amp; Performance</option>
+                  <option value="posturologia">Posturologia</option>
+                  <option value="atm">ATM &amp; Cefalee</option>
+                  <option value="recupero">Recupero Funzionale</option>
+                  <option value="pediatrica">Pediatrica</option>
+                  <option value="benessere">Benessere Integrato</option>
+                  <option value="non-so">Non so ancora</option>
+                </select>
+                <span class="select-arrow" aria-hidden="true">↓</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Il tuo messaggio</label>
+              <textarea id="message" name="message" rows="4" placeholder="Descrivici brevemente la tua situazione o la tua richiesta..."></textarea>
+            </div>
+
+            <div class="form-group form-checkbox">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy">Ho letto e accetto la <a href="#" class="link-gold">Privacy Policy</a> <span aria-hidden="true">*</span></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Invia la richiesta</span>
+              <span class="btn-success" hidden>Richiesta inviata ✓</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="map-section reveal">
+        <div class="map-container" aria-label="Mappa della clinica – Via Ferrari 17-19, Saronno">
+          <div class="map-grid" aria-hidden="true"></div>
+          <div class="map-pin-wrapper" aria-hidden="true">
+            <div class="map-pin">
+              <div class="map-pin-dot"></div>
+              <div class="map-pin-pulse"></div>
+            </div>
+          </div>
+          <div class="map-label" aria-hidden="true">
+            <span class="map-label-name">Clinica S.Egidio</span>
+            <span class="map-label-address">Via Ferrari 17-19 · Saronno</span>
+          </div>
+          <a href="https://maps.google.com/?q=Via+Ferrari+17+Saronno+VA" target="_blank" rel="noopener noreferrer" class="btn btn-ghost-light btn-sm map-open-btn" aria-label="Apri in Google Maps">
+            Apri in Google Maps →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-mark" aria-hidden="true">S·E</span>
+            <span class="logo-text">Clinica S.Egidio</span>
+          </div>
+          <p class="footer-tagline">Osteopatia e salute integrata a Saronno.<br>Un approccio costruito attorno alla persona.</p>
+          <div class="footer-social" aria-label="Social media">
+            <a href="#" class="social-link" aria-label="Seguici su Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Seguici su Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigazione">
+          <div class="footer-nav-col">
+            <h5>La clinica</h5>
+            <ul role="list">
+              <li><a href="#filosofia">Filosofia</a></li>
+              <li><a href="#spazi">Gli spazi</a></li>
+              <li><a href="#chi-siamo">Chi siamo</a></li>
+              <li><a href="#journal">Journal</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h5>Specialità</h5>
+            <ul role="list">
+              <li><a href="#specialita">Osteopatia</a></li>
+              <li><a href="#specialita">Sport &amp; Performance</a></li>
+              <li><a href="#specialita">Posturologia</a></li>
+              <li><a href="#specialita">ATM &amp; Cefalee</a></li>
+              <li><a href="#specialita">Recupero Funzionale</a></li>
+              <li><a href="#specialita">Pediatrica</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h5>Contatti</h5>
+            <ul role="list">
+              <li><a href="https://maps.google.com/?q=Via+Ferrari+17+Saronno" target="_blank" rel="noopener">Via Ferrari 17-19, Saronno</a></li>
+              <li><a href="tel:+39">+39 [numero]</a></li>
+              <li><a href="mailto:info@clinicasegidio.it">info@clinicasegidio.it</a></li>
+              <li><a href="#contatti">Prenota ora</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-legal">
+          © 2025 Clinica S.Egidio · P.IVA [numero] ·
+          <a href="#">Privacy Policy</a> ·
+          <a href="#">Cookie Policy</a> ·
+          <a href="#">Note Legali</a>
+        </p>
+        <p class="footer-credits">Progettato con cura, per la cura.</p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════════
+       WHATSAPP FLOATING BUTTON
+  ══════════════════════════════════════════ -->
+  <a href="https://wa.me/39" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contattaci su WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+    <span class="whatsapp-tooltip" aria-hidden="true">Scrivici</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
