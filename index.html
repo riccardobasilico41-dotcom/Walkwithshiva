@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reef Rangers Ukulhas | PADI Dive Center · Maldives</title>
+  <meta name="description" content="Reef Rangers Ukulhas — PADI Certified Scuba Diving Center on Ukulhas Island, North Ari Atoll, Maldives. Courses, dive sites, whale sharks, manta rays and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* =============================================
+       CSS CUSTOM PROPERTIES
+    ============================================= */
+    :root {
+      --primary:   #0B3D91;
+      --accent1:   #00C9B1;
+      --accent2:   #A8E6E2;
+      --bg-dark:   #060F1E;
+      --bg-dark2:  #0A1628;
+      --card-bg:   rgba(255,255,255,0.04);
+      --card-border: rgba(0,201,177,0.18);
+      --text-muted: rgba(255,255,255,0.65);
+      --transition: all 0.3s cubic-bezier(.4,0,.2,1);
+      --shadow: 0 20px 60px rgba(0,0,0,0.4);
+      --glow: 0 0 30px rgba(0,201,177,0.25);
+    }
+
+    /* =============================================
+       RESET & BASE
+    ============================================= */
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; font-size:16px; }
+    body { font-family:'Open Sans',sans-serif; background:var(--bg-dark); color:#fff; overflow-x:hidden; line-height:1.7; }
+    h1,h2,h3,h4,h5 { font-family:'Montserrat',sans-serif; font-weight:700; line-height:1.2; }
+    a { text-decoration:none; color:inherit; }
+    img { max-width:100%; height:auto; display:block; }
+    ul { list-style:none; }
+
+    /* =============================================
+       UTILITIES
+    ============================================= */
+    .container { max-width:1180px; margin:0 auto; padding:0 2rem; }
+
+    .gradient-text {
+      background: linear-gradient(135deg,#fff 0%,var(--accent2) 100%);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      background-clip:text;
+    }
+
+    .section-tag {
+      display:inline-block;
+      background:rgba(0,201,177,.12);
+      color:var(--accent1);
+      border:1px solid rgba(0,201,177,.3);
+      padding:.3rem 1rem;
+      border-radius:50px;
+      font-size:.82rem;
+      font-weight:600;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      margin-bottom:.9rem;
+    }
+    .section-title {
+      font-size:clamp(2rem,4vw,3rem);
+      text-align:center;
+      margin-bottom:.8rem;
+    }
+    .section-subtitle {
+      text-align:center;
+      color:var(--text-muted);
+      font-size:1.05rem;
+      max-width:580px;
+      margin:0 auto 3rem;
+    }
+
+    /* Scroll Animations */
+    .fade-up   { opacity:0; transform:translateY(40px); transition:opacity .8s ease,transform .8s ease; }
+    .fade-left { opacity:0; transform:translateX(-40px); transition:opacity .8s ease,transform .8s ease; }
+    .fade-right{ opacity:0; transform:translateX(40px);  transition:opacity .8s ease,transform .8s ease; }
+    .fade-up.visible, .fade-left.visible, .fade-right.visible { opacity:1; transform:none; }
+
+    /* Wave Divider */
+    .wave { line-height:0; overflow:hidden; }
+    .wave svg { display:block; width:100%; }
+
+    /* =============================================
+       NAVBAR
+    ============================================= */
+    .navbar {
+      position:fixed; top:0; left:0; width:100%; z-index:1000;
+      padding:1.2rem 0;
+      transition:var(--transition);
+    }
+    .navbar.scrolled {
+      background:rgba(6,15,30,.96);
+      backdrop-filter:blur(20px);
+      -webkit-backdrop-filter:blur(20px);
+      border-bottom:1px solid rgba(0,201,177,.1);
+      padding:.75rem 0;
+      box-shadow:0 4px 30px rgba(0,0,0,.35);
+    }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; }
+
+    /* Logo */
+    .nav-logo { display:flex; align-items:center; gap:.75rem; }
+    .logo-icon {
+      width:46px; height:46px; border-radius:50%;
+      background:linear-gradient(135deg,var(--primary),var(--accent1));
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.4rem;
+      box-shadow:0 0 18px rgba(0,201,177,.45);
+      flex-shrink:0;
+    }
+    .logo-text-main { font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.05rem; line-height:1.1; }
+    .logo-text-sub  { font-size:.68rem; color:var(--accent1); letter-spacing:1px; text-transform:uppercase; }
+
+    /* Links */
+    .nav-links { display:flex; align-items:center; gap:1.8rem; }
+    .nav-links a {
+      font-family:'Montserrat',sans-serif; font-size:.88rem; font-weight:500;
+      color:rgba(255,255,255,.82);
+      position:relative; transition:color .25s;
+    }
+    .nav-links a::after {
+      content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px;
+      background:var(--accent1); transition:width .3s;
+    }
+    .nav-links a:hover { color:var(--accent1); }
+    .nav-links a:hover::after { width:100%; }
+    .nav-links .btn-book {
+      background:linear-gradient(135deg,var(--accent1),#00a896);
+      color:#fff !important; padding:.55rem 1.3rem; border-radius:50px;
+      font-weight:600 !important; box-shadow:0 4px 14px rgba(0,201,177,.4);
+    }
+    .nav-links .btn-book::after { display:none !important; }
+    .nav-links .btn-book:hover { transform:translateY(-2px); box-shadow:0 8px 22px rgba(0,201,177,.5); }
+
+    /* Hamburger */
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:5px; }
+    .hamburger span { display:block; width:25px; height:2px; background:#fff; transition:var(--transition); border-radius:2px; }
+    .hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity:0; }
+    .hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+
+    /* Mobile nav overlay */
+    .mobile-nav {
+      display:none; position:fixed; inset:0; z-index:999;
+      background:rgba(6,15,30,.98); backdrop-filter:blur(20px);
+      flex-direction:column; align-items:center; justify-content:center; gap:2rem;
+    }
+    .mobile-nav.open { display:flex; }
+    .mobile-nav a { font-family:'Montserrat',sans-serif; font-size:1.4rem; font-weight:700; transition:color .25s; }
+    .mobile-nav a:hover { color:var(--accent1); }
+    .mobile-nav .m-book {
+      color:var(--accent1) !important;
+      border:2px solid var(--accent1); padding:.75rem 2.2rem; border-radius:50px;
+    }
+
+    /* =============================================
+       HERO
+    ============================================= */
+    .hero {
+      position:relative; min-height:100vh;
+      display:flex; align-items:center; justify-content:center;
+      overflow:hidden;
+    }
+    /* Layered CSS background — no external image dependency */
+    .hero-bg {
+      position:absolute; inset:0;
+      background:
+        radial-gradient(ellipse 80% 80% at 20% 60%, rgba(11,61,145,.75) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 80% 20%, rgba(0,201,177,.35) 0%, transparent 55%),
+        radial-gradient(ellipse 100% 100% at 50% 120%, rgba(0,201,177,.25) 0%, transparent 50%),
+        linear-gradient(175deg,#020c1b 0%,#062245 40%,#073d5a 65%,#05503b 100%);
+    }
+    /* Animated shimmer layer */
+    .hero-shimmer {
+      position:absolute; inset:0;
+      background:
+        radial-gradient(ellipse 40% 30% at 30% 40%,rgba(0,201,177,.08) 0%,transparent 70%),
+        radial-gradient(ellipse 60% 40% at 70% 60%,rgba(11,61,145,.1) 0%,transparent 70%);
+      animation:shimmer 8s ease-in-out infinite alternate;
+    }
+    @keyframes shimmer {
+      0%   { transform:scale(1)   rotate(0deg); opacity:.6; }
+      100% { transform:scale(1.2) rotate(3deg); opacity:1; }
+    }
+    .hero-overlay {
+      position:absolute; inset:0;
+      background:linear-gradient(to bottom,rgba(6,15,30,.2) 0%,transparent 40%,rgba(6,15,30,.6) 100%);
+    }
+
+    /* Bubbles */
+    .bubbles { position:absolute; inset:0; pointer-events:none; }
+    .bubble {
+      position:absolute; bottom:-60px; border-radius:50%;
+      background:rgba(0,201,177,.12);
+      border:1px solid rgba(0,201,177,.25);
+      animation:floatUp linear infinite;
+    }
+    @keyframes floatUp {
+      0%   { transform:translateY(0) scale(1); opacity:0; }
+      8%   { opacity:.9; }
+      90%  { opacity:.4; }
+      100% { transform:translateY(-115vh) scale(1.15); opacity:0; }
+    }
+
+    /* Hero content */
+    .hero-content {
+      position:relative; z-index:10;
+      text-align:center; padding:2rem;
+      max-width:920px;
+    }
+    .hero-badge {
+      display:inline-flex; align-items:center; gap:.5rem;
+      background:rgba(0,201,177,.13); border:1px solid rgba(0,201,177,.38);
+      border-radius:50px; padding:.38rem 1.2rem;
+      font-size:.82rem; color:var(--accent2); letter-spacing:1px;
+      margin-bottom:1.4rem;
+      animation:fadeDown 1s ease .2s both;
+    }
+    .hero h1 {
+      font-size:clamp(2.6rem,6.5vw,5.2rem); font-weight:900;
+      letter-spacing:-.5px; margin-bottom:1rem;
+      animation:fadeDown 1s ease .4s both;
+    }
+    .hero h1 .hl { background:linear-gradient(135deg,var(--accent1),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .hero-sub {
+      font-size:clamp(1rem,2vw,1.2rem); color:rgba(255,255,255,.75);
+      font-weight:300; margin-bottom:2.5rem;
+      animation:fadeDown 1s ease .6s both;
+    }
+    .hero-ctas {
+      display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;
+      animation:fadeDown 1s ease .8s both;
+    }
+    @keyframes fadeDown {
+      from { opacity:0; transform:translateY(-20px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+
+    .btn-primary {
+      display:inline-flex; align-items:center; gap:.55rem;
+      background:linear-gradient(135deg,var(--accent1),#0099b8);
+      color:#fff; padding:.9rem 2.1rem; border-radius:50px;
+      font-family:'Montserrat',sans-serif; font-weight:700; font-size:.95rem;
+      border:none; cursor:pointer; transition:var(--transition);
+      box-shadow:0 4px 22px rgba(0,201,177,.45);
+    }
+    .btn-primary:hover { transform:translateY(-3px); box-shadow:0 10px 30px rgba(0,201,177,.55); }
+
+    .btn-outline {
+      display:inline-flex; align-items:center; gap:.55rem;
+      background:transparent; color:#fff;
+      padding:.9rem 2.1rem; border-radius:50px;
+      font-family:'Montserrat',sans-serif; font-weight:700; font-size:.95rem;
+      border:2px solid rgba(255,255,255,.35); cursor:pointer; transition:var(--transition);
+    }
+    .btn-outline:hover { border-color:var(--accent1); color:var(--accent1); transform:translateY(-3px); background:rgba(0,201,177,.07); }
+
+    /* Scroll indicator */
+    .scroll-ind {
+      position:absolute; bottom:70px; left:50%; transform:translateX(-50%);
+      z-index:10; display:flex; flex-direction:column; align-items:center; gap:.5rem;
+      animation:fadeDown 1s ease 1.2s both;
+    }
+    .scroll-ind span { font-size:.7rem; color:rgba(255,255,255,.4); letter-spacing:2px; text-transform:uppercase; }
+    .scroll-mouse { width:23px; height:37px; border:2px solid rgba(255,255,255,.25); border-radius:12px; position:relative; display:flex; justify-content:center; }
+    .scroll-mouse::before { content:''; width:4px; height:8px; background:var(--accent1); border-radius:2px; position:absolute; top:5px; animation:scrollDot 2s ease-in-out infinite; }
+    @keyframes scrollDot { 0%,100% { transform:translateY(0); opacity:1; } 80% { transform:translateY(14px); opacity:0; } }
+
+    /* Hero wave */
+    .hero-wave { position:absolute; bottom:-1px; left:0; width:100%; z-index:5; }
+
+    /* =============================================
+       ABOUT
+    ============================================= */
+    .about { padding:8rem 0; background:var(--bg-dark); }
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; }
+    .about-text .section-tag { display:block; text-align:left; }
+    .about-text h2 { font-size:clamp(1.8rem,3.2vw,2.6rem); margin-bottom:1.4rem; }
+    .about-text p { color:var(--text-muted); font-size:1.02rem; margin-bottom:1.2rem; line-height:1.9; }
+    .features { display:flex; flex-direction:column; gap:.8rem; margin-top:1.8rem; }
+    .feat { display:flex; align-items:center; gap:.9rem; color:var(--text-muted); font-size:.95rem; }
+    .feat i { color:var(--accent1); width:18px; flex-shrink:0; }
+
+    .about-visual { position:relative; }
+    .about-img-box {
+      width:100%; aspect-ratio:3/4; max-height:520px; border-radius:22px;
+      overflow:hidden; position:relative;
+      background:linear-gradient(145deg,#062558,#073d5a,#04523e);
+      box-shadow:var(--shadow);
+    }
+    .about-img-box::before {
+      content:''; position:absolute; inset:0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 30%,rgba(0,201,177,.2) 0%,transparent 70%),
+        radial-gradient(ellipse 60% 80% at 20% 80%,rgba(11,61,145,.4) 0%,transparent 60%);
+    }
+    .about-img-emoji { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:7rem; z-index:1; }
+    .about-badge {
+      position:absolute; bottom:-18px; right:-18px;
+      background:linear-gradient(135deg,var(--accent1),var(--primary));
+      border-radius:16px; padding:1.2rem 1.6rem; text-align:center;
+      box-shadow:var(--shadow); z-index:2;
+    }
+    .about-badge .bnum { font-family:'Montserrat',sans-serif; font-size:2rem; font-weight:900; line-height:1; }
+    .about-badge .blbl { font-size:.78rem; color:rgba(255,255,255,.8); }
+
+    /* Stats bar */
+    .stats-bar { background:linear-gradient(135deg,var(--primary),#0d52b0); padding:3.5rem 0; }
+    .stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; text-align:center; }
+    .stat-item { padding:1rem; }
+    .stat-num {
+      font-family:'Montserrat',sans-serif; font-size:2.8rem; font-weight:900; line-height:1;
+      background:linear-gradient(135deg,var(--accent1),var(--accent2));
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    .stat-lbl { font-size:.95rem; color:rgba(255,255,255,.78); margin-top:.4rem; font-weight:500; }
+
+    /* =============================================
+       DIVE SITES
+    ============================================= */
+    .dive-sites { padding:8rem 0; background:var(--bg-dark2); }
+    .season-pill {
+      display:flex; align-items:center; justify-content:center; gap:.7rem;
+      background:rgba(0,201,177,.1); border:1px solid rgba(0,201,177,.28);
+      border-radius:50px; padding:.55rem 1.4rem;
+      font-size:.88rem; color:var(--accent2);
+      width:fit-content; margin:0 auto 3rem;
+    }
+    .sites-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.8rem; }
+    .site-card {
+      background:var(--card-bg); border:1px solid var(--card-border);
+      border-radius:20px; padding:2rem; transition:var(--transition);
+      position:relative; overflow:hidden; cursor:default;
+    }
+    .site-card::before {
+      content:''; position:absolute; top:0; left:0; right:0; height:3px;
+      background:linear-gradient(90deg,var(--accent1),transparent);
+      transform:scaleX(0); transform-origin:left; transition:transform .4s ease;
+    }
+    .site-card:hover::before { transform:scaleX(1); }
+    .site-card:hover {
+      transform:translateY(-8px);
+      border-color:rgba(0,201,177,.45);
+      box-shadow:var(--shadow),var(--glow);
+      background:rgba(255,255,255,.07);
+    }
+    .site-icon { font-size:2.4rem; margin-bottom:1rem; display:block; }
+    .site-card h3 { font-size:1.2rem; margin-bottom:.6rem; }
+    .site-card p { color:var(--text-muted); font-size:.92rem; line-height:1.7; }
+    .site-tag { display:inline-block; margin-top:1rem; background:rgba(0,201,177,.14); color:var(--accent1); padding:.2rem .8rem; border-radius:50px; font-size:.74rem; font-weight:600; }
+
+    /* =============================================
+       COURSES
+    ============================================= */
+    .courses { padding:8rem 0; background:var(--bg-dark); }
+    .courses-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:1.4rem; }
+    .course-card {
+      background:var(--card-bg); border:1px solid var(--card-border);
+      border-radius:20px; padding:2rem 1.4rem; text-align:center;
+      transition:var(--transition); position:relative; overflow:hidden;
+    }
+    .course-card::after {
+      content:''; position:absolute; inset:0; border-radius:20px;
+      border:2px solid transparent; transition:border-color .3s;
+      pointer-events:none;
+    }
+    .course-card:hover::after { border-color:var(--accent1); }
+    .course-card:hover { transform:translateY(-9px); box-shadow:var(--shadow),var(--glow); background:rgba(0,201,177,.06); }
+    .course-icon { font-size:2.8rem; margin-bottom:1rem; display:block; }
+    .course-card:hover .course-icon { animation:iconPulse .55s ease; }
+    @keyframes iconPulse { 0%,100% { transform:scale(1); } 50% { transform:scale(1.25) rotate(-5deg); } }
+    .course-card h3 { font-size:1rem; margin-bottom:.6rem; }
+    .course-card p { color:var(--text-muted); font-size:.87rem; line-height:1.6; }
+    .course-lvl { display:inline-block; margin-top:.9rem; background:rgba(0,201,177,.14); color:var(--accent1); padding:.22rem .75rem; border-radius:50px; font-size:.73rem; font-weight:600; }
+
+    /* =============================================
+       EXCURSIONS
+    ============================================= */
+    .excursions { padding:8rem 0; background:var(--bg-dark2); }
+    .exc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
+    .exc-card {
+      background:linear-gradient(135deg,rgba(11,61,145,.28),rgba(0,201,177,.04));
+      border:1px solid var(--card-border); border-radius:22px;
+      padding:2.5rem 2rem; text-align:center; transition:var(--transition);
+      position:relative; overflow:hidden;
+    }
+    .exc-card::before {
+      content:''; position:absolute; inset:0;
+      background:linear-gradient(135deg,rgba(0,201,177,.08) 0%,transparent 100%);
+      opacity:0; transition:opacity .35s;
+    }
+    .exc-card:hover::before { opacity:1; }
+    .exc-card:hover { transform:translateY(-8px); border-color:rgba(0,201,177,.45); box-shadow:var(--shadow),var(--glow); }
+    .exc-icon { font-size:3.4rem; margin-bottom:1.2rem; display:block; }
+    .exc-card h3 { font-size:1.1rem; margin-bottom:.65rem; }
+    .exc-card p { color:var(--text-muted); font-size:.9rem; line-height:1.65; }
+
+    /* =============================================
+       TESTIMONIALS
+    ============================================= */
+    .testimonials { padding:8rem 0; background:var(--bg-dark); }
+    .testi-wrapper { overflow:hidden; position:relative; }
+    .testi-track {
+      display:flex; gap:2rem;
+      transition:transform .55s cubic-bezier(.4,0,.2,1);
+      will-change:transform;
+    }
+    .testi-card {
+      flex-shrink:0;
+      background:var(--card-bg); border:1px solid var(--card-border);
+      border-radius:22px; padding:2rem;
+    }
+    .stars { color:#FFD700; font-size:.95rem; margin-bottom:1rem; letter-spacing:2px; }
+    .testi-text { color:var(--text-muted); font-size:.93rem; line-height:1.85; font-style:italic; margin-bottom:1.5rem; }
+    .reviewer { display:flex; align-items:center; gap:.9rem; }
+    .rev-avatar {
+      width:44px; height:44px; border-radius:50%;
+      background:linear-gradient(135deg,var(--primary),var(--accent1));
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Montserrat',sans-serif; font-weight:800; font-size:1rem;
+      flex-shrink:0;
+    }
+    .rev-name { font-weight:600; font-size:.9rem; }
+    .rev-country { color:var(--text-muted); font-size:.8rem; margin-top:.1rem; }
+
+    .testi-controls { display:flex; justify-content:center; align-items:center; gap:1.4rem; margin-top:2.5rem; }
+    .c-btn {
+      width:42px; height:42px; border-radius:50%;
+      border:1px solid rgba(0,201,177,.3);
+      background:transparent; color:var(--accent1);
+      cursor:pointer; transition:var(--transition);
+      display:flex; align-items:center; justify-content:center; font-size:.9rem;
+    }
+    .c-btn:hover { background:var(--accent1); color:#fff; border-color:var(--accent1); }
+    .testi-dots { display:flex; gap:.5rem; align-items:center; }
+    .tdot { width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.2); cursor:pointer; transition:var(--transition); }
+    .tdot.active { background:var(--accent1); width:24px; border-radius:4px; }
+
+    /* =============================================
+       PEOPLE TELL ABOUT US
+    ============================================= */
+    .social-proof { padding:8rem 0; background:var(--bg-dark); }
+
+    .rating-row {
+      display:flex; align-items:center; justify-content:center;
+      gap:3rem; flex-wrap:wrap; margin-bottom:4rem;
+    }
+    .rating-badge {
+      display:flex; align-items:center; gap:1rem;
+      background:var(--card-bg); border:1px solid var(--card-border);
+      border-radius:18px; padding:1.2rem 2rem;
+      transition:var(--transition);
+    }
+    .rating-badge:hover { border-color:rgba(0,201,177,.5); box-shadow:var(--glow); transform:translateY(-4px); }
+    .rb-icon { font-size:2.2rem; }
+    .rb-score { font-family:'Montserrat',sans-serif; font-size:2rem; font-weight:900; background:linear-gradient(135deg,var(--accent1),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1; }
+    .rb-label { font-size:.78rem; color:var(--text-muted); margin-top:.2rem; }
+    .rb-stars { color:#FFD700; font-size:.85rem; letter-spacing:1px; }
+
+    .posts-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.8rem;
+    }
+    .post-card {
+      background:var(--card-bg); border:1px solid var(--card-border);
+      border-radius:20px; padding:1.6rem; transition:var(--transition);
+      position:relative; overflow:hidden;
+    }
+    .post-card::before {
+      content:''; position:absolute; top:0; left:0; right:0; height:3px;
+      background:linear-gradient(90deg,var(--accent1),var(--primary));
+      transform:scaleX(0); transform-origin:left; transition:transform .4s ease;
+    }
+    .post-card:hover::before { transform:scaleX(1); }
+    .post-card:hover { transform:translateY(-6px); border-color:rgba(0,201,177,.42); box-shadow:var(--shadow),var(--glow); background:rgba(255,255,255,.06); }
+
+    .post-header { display:flex; align-items:center; gap:.85rem; margin-bottom:1rem; }
+    .post-avatar {
+      width:42px; height:42px; border-radius:50%; flex-shrink:0;
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Montserrat',sans-serif; font-weight:800; font-size:.95rem;
+      border:2px solid rgba(0,201,177,.3);
+    }
+    .post-meta .pname { font-weight:700; font-size:.92rem; }
+    .post-meta .psource { font-size:.76rem; color:var(--text-muted); display:flex; align-items:center; gap:.35rem; margin-top:.15rem; }
+    .post-meta .psource i { color:var(--accent1); }
+    .post-body { color:var(--text-muted); font-size:.9rem; line-height:1.78; font-style:italic; }
+    .post-body::before { content:'\201C'; color:var(--accent1); font-size:1.8rem; font-style:normal; line-height:.5; vertical-align:-.3em; margin-right:.2rem; font-family:'Montserrat',sans-serif; font-weight:900; }
+    .post-footer { display:flex; align-items:center; justify-content:space-between; margin-top:1.1rem; }
+    .post-stars { color:#FFD700; font-size:.82rem; letter-spacing:1px; }
+    .post-date { font-size:.75rem; color:rgba(255,255,255,.3); }
+    .post-tag {
+      display:inline-block; background:rgba(0,201,177,.12); color:var(--accent1);
+      padding:.18rem .65rem; border-radius:50px; font-size:.72rem; font-weight:600;
+    }
+
+    /* =============================================
+       FAQ
+    ============================================= */
+    .faq { padding:8rem 0; background:var(--bg-dark2); }
+    .faq-list { max-width:820px; margin:0 auto; display:flex; flex-direction:column; gap:1rem; }
+    .faq-item {
+      background:var(--card-bg); border:1px solid var(--card-border);
+      border-radius:14px; overflow:hidden; transition:border-color .3s;
+    }
+    .faq-item:hover { border-color:rgba(0,201,177,.35); }
+    .faq-q {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:1.35rem 1.5rem; cursor:pointer; user-select:none; gap:1rem;
+    }
+    .faq-q h4 { font-size:.98rem; font-weight:600; color:#fff; }
+    .faq-ico {
+      width:28px; height:28px; min-width:28px; border-radius:50%;
+      background:rgba(0,201,177,.14); display:flex; align-items:center; justify-content:center;
+      color:var(--accent1); font-size:.8rem; transition:transform .3s,background .3s;
+    }
+    .faq-item.open .faq-ico { transform:rotate(45deg); background:var(--accent1); color:#fff; }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height .42s ease,padding .3s; }
+    .faq-item.open .faq-a { max-height:260px; padding-bottom:1.4rem; }
+    .faq-a p { padding:0 1.5rem; color:var(--text-muted); font-size:.93rem; line-height:1.82; }
+
+    /* =============================================
+       CONTACT
+    ============================================= */
+    .contact { padding:8rem 0; background:var(--bg-dark); }
+    .contact-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:4.5rem; align-items:start; }
+    .contact-info h2 { font-size:clamp(1.7rem,3vw,2.4rem); margin-bottom:1rem; }
+    .contact-info > p { color:var(--text-muted); font-size:1rem; margin-bottom:2rem; }
+    .cdetails { display:flex; flex-direction:column; gap:1.2rem; margin-bottom:2.2rem; }
+    .cdetail { display:flex; align-items:center; gap:1rem; }
+    .cdetail-icon {
+      width:44px; height:44px; min-width:44px; border-radius:12px;
+      background:rgba(0,201,177,.14); display:flex; align-items:center; justify-content:center;
+      color:var(--accent1); font-size:1rem;
+    }
+    .cdetail .lbl { font-size:.76rem; color:rgba(255,255,255,.38); text-transform:uppercase; letter-spacing:.5px; }
+    .cdetail .val { color:#fff; font-size:.93rem; }
+    .cdetail .val a { color:var(--accent1); transition:opacity .2s; }
+    .cdetail .val a:hover { opacity:.8; }
+
+    .wa-btn {
+      display:inline-flex; align-items:center; gap:.75rem;
+      background:#25D366; color:#fff;
+      padding:.95rem 2rem; border-radius:50px;
+      font-family:'Montserrat',sans-serif; font-weight:700; font-size:1rem;
+      box-shadow:0 4px 20px rgba(37,211,102,.4); transition:var(--transition);
+    }
+    .wa-btn:hover { background:#1da851; transform:translateY(-3px); box-shadow:0 8px 28px rgba(37,211,102,.5); }
+
+    .contact-form-box {
+      background:var(--card-bg); border:1px solid var(--card-border);
+      border-radius:24px; padding:2.5rem;
+    }
+    .contact-form-box h3 { font-size:1.25rem; margin-bottom:1.5rem; }
+    .fg { margin-bottom:1.4rem; }
+    .fg label { display:block; font-size:.8rem; font-weight:600; color:rgba(255,255,255,.6); margin-bottom:.45rem; text-transform:uppercase; letter-spacing:.5px; }
+    .fg input, .fg textarea, .fg select {
+      width:100%; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+      border-radius:10px; padding:.85rem 1.1rem;
+      color:#fff; font-family:'Open Sans',sans-serif; font-size:.93rem;
+      outline:none; transition:var(--transition); appearance:none;
+    }
+    .fg input:focus, .fg textarea:focus, .fg select:focus {
+      border-color:var(--accent1); box-shadow:0 0 0 3px rgba(0,201,177,.14);
+      background:rgba(0,201,177,.04);
+    }
+    .fg input::placeholder, .fg textarea::placeholder { color:rgba(255,255,255,.28); }
+    .fg select option { background:#0a1628; }
+    .fg textarea { height:120px; resize:none; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    .submit-btn {
+      width:100%; background:linear-gradient(135deg,var(--accent1),#009db8);
+      color:#fff; padding:.95rem; border-radius:50px;
+      font-family:'Montserrat',sans-serif; font-weight:700; font-size:1rem;
+      border:none; cursor:pointer; transition:var(--transition);
+      box-shadow:0 4px 18px rgba(0,201,177,.4);
+      display:flex; align-items:center; justify-content:center; gap:.6rem;
+    }
+    .submit-btn:hover { transform:translateY(-2px); box-shadow:0 8px 28px rgba(0,201,177,.5); }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    .footer { background:var(--bg-dark); border-top:1px solid rgba(255,255,255,.04); }
+    .footer-wave { line-height:0; }
+    .footer-wave svg { display:block; width:100%; }
+    .footer-body { padding:4rem 0 2rem; }
+    .footer-grid { display:grid; grid-template-columns:1.6fr 1fr 1fr 1fr; gap:3rem; margin-bottom:3rem; }
+    .fb-logo { display:flex; align-items:center; gap:.7rem; margin-bottom:1rem; }
+    .footer-brand p { color:var(--text-muted); font-size:.88rem; line-height:1.7; margin-bottom:1.4rem; }
+    .footer-tagline { font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.05rem; background:linear-gradient(135deg,var(--accent1),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .socials { display:flex; gap:.85rem; margin-top:1.2rem; }
+    .soc-link {
+      width:40px; height:40px; border-radius:10px;
+      background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+      display:flex; align-items:center; justify-content:center;
+      color:var(--text-muted); font-size:1rem; transition:var(--transition);
+    }
+    .soc-link:hover { background:var(--accent1); border-color:var(--accent1); color:#fff; transform:translateY(-3px); }
+    .footer-col h4 { font-size:.82rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:1.4rem; color:rgba(255,255,255,.9); }
+    .flinks { display:flex; flex-direction:column; gap:.7rem; }
+    .flinks a { color:var(--text-muted); font-size:.88rem; transition:var(--transition); display:flex; align-items:center; gap:.45rem; }
+    .flinks a i { font-size:.65rem; color:rgba(0,201,177,.5); }
+    .flinks a:hover { color:var(--accent1); padding-left:4px; }
+    .footer-bottom {
+      border-top:1px solid rgba(255,255,255,.05); padding:1.5rem 0;
+      display:flex; justify-content:space-between; align-items:center;
+      gap:1rem; flex-wrap:wrap;
+    }
+    .footer-bottom p { color:rgba(255,255,255,.35); font-size:.83rem; }
+    .footer-bottom a { color:var(--accent1); }
+
+    /* =============================================
+       FLOATING WHATSAPP
+    ============================================= */
+    .float-wa {
+      position:fixed; bottom:28px; right:28px; z-index:998;
+      width:58px; height:58px; border-radius:50%;
+      background:#25D366; color:#fff; font-size:1.6rem;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:0 4px 20px rgba(37,211,102,.5);
+      transition:var(--transition); animation:waFloat 3s ease-in-out infinite;
+    }
+    .float-wa:hover { transform:scale(1.15); animation:none; box-shadow:0 8px 32px rgba(37,211,102,.6); }
+    @keyframes waFloat { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-6px); } }
+    .float-wa-tip {
+      position:absolute; right:68px; white-space:nowrap;
+      background:rgba(6,15,30,.92); color:#fff; padding:.38rem 1rem;
+      border-radius:50px; font-size:.82rem; font-family:'Montserrat',sans-serif; font-weight:600;
+      opacity:0; pointer-events:none; transition:opacity .3s;
+      border:1px solid rgba(37,211,102,.3);
+    }
+    .float-wa:hover .float-wa-tip { opacity:1; }
+
+    /* =============================================
+       RESPONSIVE
+    ============================================= */
+    @media (max-width:1100px) {
+      .courses-grid { grid-template-columns:repeat(3,1fr); }
+      .footer-grid  { grid-template-columns:1fr 1fr; gap:2rem; }
+      .sites-grid   { grid-template-columns:1fr 1fr; }
+      .posts-grid   { grid-template-columns:1fr 1fr; }
+    }
+    @media (max-width:900px) {
+      .about-grid    { grid-template-columns:1fr; gap:2.5rem; }
+      .about-visual  { order:-1; }
+      .exc-grid      { grid-template-columns:1fr 1fr; }
+      .contact-grid  { grid-template-columns:1fr; gap:2.5rem; }
+      .rating-row    { gap:1.2rem; }
+    }
+    @media (max-width:768px) {
+      .nav-links     { display:none; }
+      .hamburger     { display:flex; }
+      .stats-grid    { grid-template-columns:repeat(2,1fr); }
+      .courses-grid  { grid-template-columns:repeat(2,1fr); }
+      .exc-grid      { grid-template-columns:1fr; }
+      .sites-grid    { grid-template-columns:1fr; }
+      .posts-grid    { grid-template-columns:1fr; }
+      .hero-ctas     { flex-direction:column; align-items:center; }
+      .form-row      { grid-template-columns:1fr; }
+      .footer-grid   { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; text-align:center; }
+    }
+    @media (max-width:480px) {
+      .container     { padding:0 1.2rem; }
+      .courses-grid  { grid-template-columns:1fr; }
+      .stat-num      { font-size:2.2rem; }
+      .about-badge   { right:-5px; bottom:-10px; }
+      .float-wa      { width:50px; height:50px; font-size:1.4rem; bottom:20px; right:20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================================================
+     FLOATING WHATSAPP
+================================================ -->
+<a href="https://wa.me/9609966860" target="_blank" rel="noopener" class="float-wa" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="float-wa-tip">Chat with us!</span>
+</a>
+
+<!-- ================================================
+     NAVBAR
+================================================ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">🐠</div>
+        <div>
+          <div class="logo-text-main">Reef Rangers</div>
+          <div class="logo-text-sub">Ukulhas · Maldives</div>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#dive-sites">Dive Sites</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#social-proof">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://wa.me/9609966860" target="_blank" rel="noopener" class="btn-book">Book Now</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <a href="#home"       class="mnav-link">Home</a>
+  <a href="#about"      class="mnav-link">About</a>
+  <a href="#dive-sites" class="mnav-link">Dive Sites</a>
+  <a href="#courses"    class="mnav-link">Courses</a>
+  <a href="#excursions" class="mnav-link">Excursions</a>
+  <a href="#social-proof" class="mnav-link">Reviews</a>
+  <a href="#faq"          class="mnav-link">FAQ</a>
+  <a href="#contact"    class="mnav-link">Contact</a>
+  <a href="https://wa.me/9609966860" target="_blank" rel="noopener" class="m-book">Book Now</a>
+</div>
+
+<!-- ================================================
+     HERO
+================================================ -->
+<section class="hero" id="home" aria-label="Hero">
+  <div class="hero-bg"></div>
+  <div class="hero-shimmer"></div>
+  <div class="hero-overlay"></div>
+  <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <i class="fas fa-certificate"></i>
+      PADI Certified Dive Center &nbsp;·&nbsp; Est. 2020
+    </div>
+    <h1>Explore the <span class="hl">Best of<br>the Maldives</span></h1>
+    <p class="hero-sub">PADI Dive Center &nbsp;·&nbsp; Ukulhas Island &nbsp;·&nbsp; North Ari Atoll</p>
+    <div class="hero-ctas">
+      <a href="#courses" class="btn-primary">
+        <i class="fas fa-water"></i> Discover Courses
+      </a>
+      <a href="https://wa.me/9609966860" target="_blank" rel="noopener" class="btn-outline">
+        <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-ind" aria-hidden="true">
+    <div class="scroll-mouse"></div>
+    <span>Scroll</span>
+  </div>
+
+  <div class="hero-wave" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path fill="#060F1E" d="M0,40 C360,80 1080,0 1440,50 L1440,80 L0,80 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ================================================
+     ABOUT
+================================================ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text fade-left">
+        <span class="section-tag">About Us</span>
+        <h2 class="gradient-text">Your Gateway to the Underwater World</h2>
+        <p>Welcome to Reef Rangers Ukulhas, your gateway to the underwater world. We are a passionate team of certified instructors dedicated to sharing the thrill of scuba diving with everyone — from first-timers to aspiring dive professionals.</p>
+        <p>With years of experience and a commitment to safety, we offer world-class training in a fun, supportive environment. Located on beautiful Ukulhas Island in North Ari Atoll, we're surrounded by some of the most breathtaking marine life on the planet.</p>
+        <div class="features">
+          <div class="feat"><i class="fas fa-check-circle"></i><span>PADI certified instructors &amp; premium equipment</span></div>
+          <div class="feat"><i class="fas fa-check-circle"></i><span>Small groups for personalised attention</span></div>
+          <div class="feat"><i class="fas fa-check-circle"></i><span>Eco-conscious, reef-friendly diving practices</span></div>
+          <div class="feat"><i class="fas fa-check-circle"></i><span>All skill levels — from beginner to pro</span></div>
+        </div>
+      </div>
+
+      <div class="about-visual fade-right">
+        <div class="about-img-box">
+          <div class="about-img-emoji" aria-hidden="true">🤿</div>
+        </div>
+        <div class="about-badge">
+          <div class="bnum">5★</div>
+          <div class="blbl">Reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="stats-bar" style="margin-top:6rem;">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-up">
+          <div class="stat-num" data-target="500" data-suffix="+">0</div>
+          <div class="stat-lbl">Dives Completed</div>
+        </div>
+        <div class="stat-item fade-up" style="transition-delay:.1s">
+          <div class="stat-num">PADI</div>
+          <div class="stat-lbl">Certified Center</div>
+        </div>
+        <div class="stat-item fade-up" style="transition-delay:.2s">
+          <div class="stat-num">5★</div>
+          <div class="stat-lbl">Average Rating</div>
+        </div>
+        <div class="stat-item fade-up" style="transition-delay:.3s">
+          <div class="stat-num" data-target="2020">0</div>
+          <div class="stat-lbl">Established</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+    <path fill="#0A1628" d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z"/>
+  </svg>
+</div>
+
+<!-- ================================================
+     DIVE SITES
+================================================ -->
+<section class="dive-sites" id="dive-sites">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <span class="section-tag">Explore</span>
+      <h2 class="section-title gradient-text">Famous Dive Sites<br>North Ari Atoll</h2>
+      <div class="season-pill">
+        <i class="fas fa-sun"></i>
+        Best time: January–April (dry season) · Diving possible year-round
+      </div>
+    </div>
+
+    <div class="sites-grid">
+      <div class="site-card fade-up">
+        <span class="site-icon">🏔</span>
+        <h3>Maaya Thila</h3>
+        <p>An iconic pinnacle dive site with intricate caves, dramatic drop-offs, and thrilling swim-throughs. One of the finest dive sites in the Maldives, teeming with marine life day and night.</p>
+        <span class="site-tag">Pinnacle Dive</span>
+      </div>
+      <div class="site-card fade-up" style="transition-delay:.1s">
+        <span class="site-icon">🦈</span>
+        <h3>Fish Head (Mushimasmigili)</h3>
+        <p>A UNESCO-recognised marine protected area famed for resident grey reef sharks and colossal schools of blueline snappers. An unforgettable drift dive experience.</p>
+        <span class="site-tag">Marine Reserve</span>
+      </div>
+      <div class="site-card fade-up" style="transition-delay:.2s">
+        <span class="site-icon">🌀</span>
+        <h3>Hafsa Thila</h3>
+        <p>A classic thila offering encounters with white-tip reef sharks, napoleon wrasse, and a stunning variety of reef fish in crystal-clear blue water.</p>
+        <span class="site-tag">Reef Dive</span>
+      </div>
+      <div class="site-card fade-up" style="transition-delay:.1s">
+        <span class="site-icon">🦈</span>
+        <h3>Ukulhas Shark Point</h3>
+        <p>Located at the harbour corner of Ukulhas, this thrilling site offers encounters with multiple shark species — a must for shark enthusiasts.</p>
+        <span class="site-tag">Shark Dive</span>
+      </div>
+      <div class="site-card fade-up" style="transition-delay:.2s">
+        <span class="site-icon">🐟</span>
+        <h3>Rasdhoo Madivaru</h3>
+        <p>Famous for its resident population of grey reef sharks and exciting channel diving. Nutrient-rich currents attract spectacular pelagic marine life.</p>
+        <span class="site-tag">Channel Dive</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+    <path fill="#060F1E" d="M0,0 C480,60 960,0 1440,30 L1440,60 L0,60 Z"/>
+  </svg>
+</div>
+
+<!-- ================================================
+     COURSES
+================================================ -->
+<section class="courses" id="courses">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;margin-bottom:3rem">
+      <span class="section-tag">Learn to Dive</span>
+      <h2 class="section-title gradient-text">Courses We Provide</h2>
+      <p class="section-subtitle">From your very first underwater breath to becoming a dive professional — we guide you every step of the way.</p>
+    </div>
+
+    <div class="courses-grid">
+      <div class="course-card fade-up">
+        <span class="course-icon">🤿</span>
+        <h3>Discover Scuba Diving</h3>
+        <p>Your first underwater adventure. No experience needed — try diving in a safe, supervised setting.</p>
+        <span class="course-lvl">Beginner</span>
+      </div>
+      <div class="course-card fade-up" style="transition-delay:.1s">
+        <span class="course-icon">🎓</span>
+        <h3>Open Water Course</h3>
+        <p>Get PADI certified and dive to 18 m / 60 ft. The world's most popular scuba certification.</p>
+        <span class="course-lvl">Entry Level</span>
+      </div>
+      <div class="course-card fade-up" style="transition-delay:.2s">
+        <span class="course-icon">⬆️</span>
+        <h3>Advanced Open Water</h3>
+        <p>Dive deeper to 30 m, master navigation, and explore exciting specialties.</p>
+        <span class="course-lvl">Intermediate</span>
+      </div>
+      <div class="course-card fade-up" style="transition-delay:.3s">
+        <span class="course-icon">🚑</span>
+        <h3>Rescue Diver</h3>
+        <p>Master emergency management and underwater rescue techniques. Be a safer diver.</p>
+        <span class="course-lvl">Advanced</span>
+      </div>
+      <div class="course-card fade-up" style="transition-delay:.4s">
+        <span class="course-icon">🏅</span>
+        <h3>Divemaster</h3>
+        <p>Turn your passion into a profession. Lead dives and guide guests as a PADI pro.</p>
+        <span class="course-lvl">Professional</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+    <path fill="#0A1628" d="M0,30 C480,0 960,60 1440,20 L1440,60 L0,60 Z"/>
+  </svg>
+</div>
+
+<!-- ================================================
+     EXCURSIONS
+================================================ -->
+<section class="excursions" id="excursions">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;margin-bottom:3rem">
+      <span class="section-tag">Adventures</span>
+      <h2 class="section-title gradient-text">Experiences &amp; Excursions</h2>
+      <p class="section-subtitle">Beyond diving — discover the magic of the Maldives above and below the surface.</p>
+    </div>
+
+    <div class="exc-grid">
+      <div class="exc-card fade-up">
+        <span class="exc-icon">🦅</span>
+        <h3>Manta Ray Snorkeling</h3>
+        <p>Glide alongside majestic manta rays in their natural habitat. A bucket-list experience for every ocean lover.</p>
+      </div>
+      <div class="exc-card fade-up" style="transition-delay:.1s">
+        <span class="exc-icon">🐋</span>
+        <h3>Whale Shark Safari</h3>
+        <p>Swim with the ocean's gentle giants. North Ari Atoll is one of Earth's finest whale shark locations.</p>
+      </div>
+      <div class="exc-card fade-up" style="transition-delay:.2s">
+        <span class="exc-icon">🐢</span>
+        <h3>Nurse Shark &amp; Turtle Tour</h3>
+        <p>Snorkel with friendly nurse sharks resting on the reef and graceful sea turtles in the warm shallows.</p>
+      </div>
+      <div class="exc-card fade-up" style="transition-delay:.1s">
+        <span class="exc-icon">🌙</span>
+        <h3>Night Diving</h3>
+        <p>Discover a completely different reef after dark — octopus, lobsters, sleeping fish, and stunning bioluminescence.</p>
+      </div>
+      <div class="exc-card fade-up" style="transition-delay:.2s">
+        <span class="exc-icon">🎣</span>
+        <h3>Fishing &amp; BBQ</h3>
+        <p>Traditional Maldivian fishing followed by a fresh sunset seafood BBQ right on the beach.</p>
+      </div>
+      <div class="exc-card fade-up" style="transition-delay:.3s">
+        <span class="exc-icon">🏝</span>
+        <h3>Island Hopping</h3>
+        <p>Explore uninhabited islands, pristine sandbanks, and nearby local villages to feel authentic Maldivian culture.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+    <path fill="#060F1E" d="M0,20 C480,60 960,0 1440,40 L1440,60 L0,60 Z"/>
+  </svg>
+</div>
+
+<!-- ================================================
+     TESTIMONIALS
+================================================ -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;margin-bottom:3rem">
+      <span class="section-tag">Reviews</span>
+      <h2 class="section-title gradient-text">What Our Divers Say</h2>
+      <p class="section-subtitle">Real experiences from adventurers who dove with us.</p>
+    </div>
+
+    <div class="testi-wrapper fade-up" id="testiWrapper">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"Absolutely incredible experience! The instructors were patient, knowledgeable, and made us feel completely safe. We saw whale sharks on our very first dive — a dream come true!"</p>
+          <div class="reviewer">
+            <div class="rev-avatar" style="background:linear-gradient(135deg,#0B3D91,#00C9B1)">S</div>
+            <div><div class="rev-name">Sarah M.</div><div class="rev-country">🇬🇧 United Kingdom</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"Best diving experience of my life. The team at Reef Rangers really cares about the ocean and their guests. Small groups, top equipment, and stunning dive sites. Already planning my return!"</p>
+          <div class="reviewer">
+            <div class="rev-avatar" style="background:linear-gradient(135deg,#1a5276,#00a896)">T</div>
+            <div><div class="rev-name">Thomas K.</div><div class="rev-country">🇩🇪 Germany</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"I completed my Open Water certification here and it was worth every moment. The instructors are fun, professional, and incredibly passionate. Maaya Thila blew my mind!"</p>
+          <div class="reviewer">
+            <div class="rev-avatar" style="background:linear-gradient(135deg,#6c3483,#00C9B1)">A</div>
+            <div><div class="rev-name">Aisha N.</div><div class="rev-country">🇦🇪 UAE</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"The night dive was otherworldly! Bioluminescence everywhere, sleeping turtles, and an octopus show. Reef Rangers made it pure magic."</p>
+          <div class="reviewer">
+            <div class="rev-avatar" style="background:linear-gradient(135deg,#1e8449,#00C9B1)">L</div>
+            <div><div class="rev-name">Lucas R.</div><div class="rev-country">🇧🇷 Brazil</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"Dove with them for a full week. Every single dive was perfectly organised, safe, and breathtaking. Fish Head is unlike anything I've ever seen. 10/10 would recommend!"</p>
+          <div class="reviewer">
+            <div class="rev-avatar" style="background:linear-gradient(135deg,#c0392b,#00C9B1)">Y</div>
+            <div><div class="rev-name">Yuki H.</div><div class="rev-country">🇯🇵 Japan</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"My husband and I did the manta ray snorkeling and whale shark safari — both were out of this world. The guides were genuinely excited about every encounter!"</p>
+          <div class="reviewer">
+            <div class="rev-avatar" style="background:linear-gradient(135deg,#2874a6,#00C9B1)">M</div>
+            <div><div class="rev-name">Marie C.</div><div class="rev-country">🇫🇷 France</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-controls">
+      <button class="c-btn" id="prevBtn" aria-label="Previous review"><i class="fas fa-chevron-left"></i></button>
+      <div class="testi-dots" id="testiDots"></div>
+      <button class="c-btn" id="nextBtn" aria-label="Next review"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+    <path fill="#060F1E" d="M0,40 C360,0 1080,60 1440,20 L1440,60 L0,60 Z"/>
+  </svg>
+</div>
+
+<!-- ================================================
+     PEOPLE TELL ABOUT US
+================================================ -->
+<section class="social-proof" id="social-proof">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;margin-bottom:3rem">
+      <span class="section-tag">Social Proof</span>
+      <h2 class="section-title gradient-text">People Tell About Us</h2>
+      <p class="section-subtitle">From Google to Instagram to TripAdvisor — the ocean community keeps sharing their Reef Rangers moments.</p>
+    </div>
+
+    <!-- Rating badges -->
+    <div class="rating-row fade-up">
+      <div class="rating-badge">
+        <div class="rb-icon">🌐</div>
+        <div>
+          <div class="rb-score">5.0</div>
+          <div class="rb-stars">★★★★★</div>
+          <div class="rb-label">Google Reviews</div>
+        </div>
+      </div>
+      <div class="rating-badge">
+        <div class="rb-icon">✈️</div>
+        <div>
+          <div class="rb-score">5.0</div>
+          <div class="rb-stars">★★★★★</div>
+          <div class="rb-label">TripAdvisor</div>
+        </div>
+      </div>
+      <div class="rating-badge">
+        <div class="rb-icon">📸</div>
+        <div>
+          <div class="rb-score">1k+</div>
+          <div class="rb-stars">Followers</div>
+          <div class="rb-label">Instagram</div>
+        </div>
+      </div>
+      <div class="rating-badge">
+        <div class="rb-icon">🏅</div>
+        <div>
+          <div class="rb-score">PADI</div>
+          <div class="rb-stars">★★★★★</div>
+          <div class="rb-label">5 Star Centre</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post cards -->
+    <div class="posts-grid">
+
+      <div class="post-card fade-up">
+        <div class="post-header">
+          <div class="post-avatar" style="background:linear-gradient(135deg,#e74c3c,#f39c12)">JR</div>
+          <div class="post-meta">
+            <div class="pname">James R.</div>
+            <div class="psource"><i class="fab fa-google"></i> Google Review</div>
+          </div>
+        </div>
+        <div class="post-body">Came with zero experience and left as a certified Open Water diver. The instructors were endlessly patient and the dive sites around Ukulhas are simply spectacular. Saw whale sharks twice!</div>
+        <div class="post-footer">
+          <span class="post-stars">★★★★★</span>
+          <span class="post-date">March 2025</span>
+        </div>
+      </div>
+
+      <div class="post-card fade-up" style="transition-delay:.1s">
+        <div class="post-header">
+          <div class="post-avatar" style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)">KL</div>
+          <div class="post-meta">
+            <div class="pname">@kirsty.loves.ocean</div>
+            <div class="psource"><i class="fab fa-instagram"></i> Instagram</div>
+          </div>
+        </div>
+        <div class="post-body">Just finished my Divemaster with Reef Rangers and I can honestly say it was the best decision of my life. The team is like family — professional, passionate, and so much fun. The Maldives from underwater is a whole other world. 🌊🦈 #ReefRangers #Maldives</div>
+        <div class="post-footer">
+          <span class="post-tag">#DiveMaster</span>
+          <span class="post-date">February 2025</span>
+        </div>
+      </div>
+
+      <div class="post-card fade-up" style="transition-delay:.2s">
+        <div class="post-header">
+          <div class="post-avatar" style="background:linear-gradient(135deg,#00b09b,#0B3D91)">MP</div>
+          <div class="post-meta">
+            <div class="pname">Marco P.</div>
+            <div class="psource"><i class="fas fa-plane"></i> TripAdvisor</div>
+          </div>
+        </div>
+        <div class="post-body">Booked last-minute and they were incredibly accommodating. Fish Head dive was jaw-dropping — hundreds of sharks circling below us. Instructors prioritise safety without sacrificing adventure. Already booked for next year!</div>
+        <div class="post-footer">
+          <span class="post-stars">★★★★★</span>
+          <span class="post-date">January 2025</span>
+        </div>
+      </div>
+
+      <div class="post-card fade-up" style="transition-delay:.1s">
+        <div class="post-header">
+          <div class="post-avatar" style="background:linear-gradient(135deg,#fc466b,#3f5efb)">NW</div>
+          <div class="post-meta">
+            <div class="pname">@naomi_wanders</div>
+            <div class="psource"><i class="fab fa-tiktok"></i> TikTok</div>
+          </div>
+        </div>
+        <div class="post-body">My TikTok about the night dive with Reef Rangers got 200k views — and the real thing was 1000x better than the video! Bioluminescence, a sleeping turtle, and an octopus all in one dive. These guys are AMAZING. 🌙✨ #NightDive #Maldives</div>
+        <div class="post-footer">
+          <span class="post-tag">200k Views</span>
+          <span class="post-date">April 2025</span>
+        </div>
+      </div>
+
+      <div class="post-card fade-up" style="transition-delay:.2s">
+        <div class="post-header">
+          <div class="post-avatar" style="background:linear-gradient(135deg,#1a9850,#00C9B1)">HB</div>
+          <div class="post-meta">
+            <div class="pname">Hannah B.</div>
+            <div class="psource"><i class="fab fa-google"></i> Google Review</div>
+          </div>
+        </div>
+        <div class="post-body">Honestly the best diving experience I've had in ten years of diving. Guides know every centimetre of the reef. Small groups, pristine equipment, and genuine care for the environment. This is how diving should be done.</div>
+        <div class="post-footer">
+          <span class="post-stars">★★★★★</span>
+          <span class="post-date">December 2024</span>
+        </div>
+      </div>
+
+      <div class="post-card fade-up" style="transition-delay:.3s">
+        <div class="post-header">
+          <div class="post-avatar" style="background:linear-gradient(135deg,#2980b9,#6dd5fa)">DT</div>
+          <div class="post-meta">
+            <div class="pname">@divingwith_d</div>
+            <div class="psource"><i class="fab fa-instagram"></i> Instagram</div>
+          </div>
+        </div>
+        <div class="post-body">Manta ray snorkeling with Reef Rangers was absolutely life-changing. Three mantas doing barrel rolls right below us for 45 minutes straight. The guides timed it perfectly and the whole experience felt magical. Ukulhas island is a hidden gem! 🦅💙 #MantaRay #Ukulhas</div>
+        <div class="post-footer">
+          <span class="post-tag">#MantaMagic</span>
+          <span class="post-date">November 2024</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+    <path fill="#0A1628" d="M0,40 C360,0 1080,60 1440,20 L1440,60 L0,60 Z"/>
+  </svg>
+</div>
+
+<!-- ================================================
+     FAQ
+================================================ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;margin-bottom:3rem">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title gradient-text">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know before your dive adventure begins.</p>
+    </div>
+
+    <div class="faq-list fade-up">
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>Do I need any experience to try scuba diving?</h4>
+          <div class="faq-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>No experience is needed for our Discover Scuba Diving program! After a short briefing and shallow-water practice session with an instructor, you'll head straight to the reef. If you can swim, you can dive.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>How long does the PADI Open Water course take?</h4>
+          <div class="faq-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>The full PADI Open Water Diver course typically takes 3–4 days, covering theory, confined water skills, and 4 open water training dives. You can accelerate the process by completing PADI eLearning theory before you arrive.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>What is the best time of year to dive in North Ari Atoll?</h4>
+          <div class="faq-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>The dry season (January–April) offers the best visibility — up to 30 m+ — and calmest seas. Diving is excellent year-round though. Whale sharks are resident in North Ari Atoll all year, while manta rays are most frequent from May to November.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>Is scuba diving safe? What safety measures do you have in place?</h4>
+          <div class="faq-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>Safety is our top priority. All instructors hold current PADI certifications, first aid, and rescue qualifications. We use well-maintained, regularly serviced equipment, keep groups small (max 4 divers per instructor), carry oxygen and a first aid kit on every boat, and conduct thorough pre-dive briefings.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>Do you provide all the diving equipment?</h4>
+          <div class="faq-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>Yes! We provide all necessary gear including wetsuits, masks, fins, BCDs, regulators, and tanks. All equipment is regularly serviced and thoroughly sanitised between uses. You're equally welcome to bring your own gear.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>Can children participate in diving activities?</h4>
+          <div class="faq-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>Children aged 8+ can enjoy PADI Bubblemaker (up to 2 m in shallow water). From age 10, they can enrol in PADI Junior Open Water. All junior divers must be accompanied by a certified adult and dive within age-appropriate depth limits.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>How do I get to Ukulhas Island?</h4>
+          <div class="faq-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>Ukulhas is reachable from Malé via a domestic flight to Rasdhoo (≈30 min) plus a short speedboat transfer, or by a direct speedboat from Malé (≈2.5–3 hours). We can arrange transfers upon request — just message us on WhatsApp.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>How do I book, and what is the cancellation policy?</h4>
+          <div class="faq-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>Book easily via WhatsApp, email, or the contact form below. A deposit secures your booking. Cancellations 48 hours or more in advance receive a full refund; within 48 hours the deposit is non-refundable. Contact us for group packages and special enquiries.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">
+          <h4>Are there medical requirements for diving?</h4>
+          <div class="faq-ico"><i class="fas fa-plus"></i></div>
+        </div>
+        <div class="faq-a"><p>Most healthy adults can dive. You'll complete a standard PADI medical questionnaire before any water activities. Certain conditions (recent surgery, heart conditions, severe asthma, etc.) may require a medical clearance from your doctor. Contact us if you have any health concerns before booking.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Wave -->
+<div class="wave" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+    <path fill="#060F1E" d="M0,20 C360,60 1080,0 1440,40 L1440,60 L0,60 Z"/>
+  </svg>
+</div>
+
+<!-- ================================================
+     CONTACT
+================================================ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;margin-bottom:4rem">
+      <span class="section-tag">Get in Touch</span>
+      <h2 class="section-title gradient-text">Book Your Dive Adventure</h2>
+      <p class="section-subtitle">Ready to explore the deep? We're here to make your diving dreams a reality.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="fade-left">
+        <h2 class="gradient-text">Let's Plan Your Perfect Dive</h2>
+        <p>Whether you're a complete beginner or a seasoned diver, we have an adventure waiting for you. Reach out via WhatsApp for the fastest response!</p>
+
+        <div class="cdetails">
+          <div class="cdetail">
+            <div class="cdetail-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="lbl">WhatsApp / Phone</div>
+              <div class="val"><a href="https://wa.me/9609966860">+960 996 6860</a></div>
+            </div>
+          </div>
+          <div class="cdetail">
+            <div class="cdetail-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="lbl">Email</div>
+              <div class="val"><a href="mailto:reefrangersuk@gmail.com">reefrangersuk@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="cdetail">
+            <div class="cdetail-icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <div class="lbl">Website</div>
+              <div class="val">www.ukulhasreefrangers.com</div>
+            </div>
+          </div>
+          <div class="cdetail">
+            <div class="cdetail-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="lbl">Location</div>
+              <div class="val">Ukulhas Island, North Ari Atoll, Maldives</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/9609966860" target="_blank" rel="noopener" class="wa-btn">
+          <i class="fab fa-whatsapp" style="font-size:1.3rem"></i>
+          Chat on WhatsApp
+        </a>
+      </div>
+
+      <div class="fade-right">
+        <div class="contact-form-box">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="fg">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="John" required>
+              </div>
+              <div class="fg">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Smith">
+              </div>
+            </div>
+            <div class="fg">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" placeholder="john@example.com" required>
+            </div>
+            <div class="fg">
+              <label for="finterest">I'm Interested In</label>
+              <select id="finterest">
+                <option value="">Select an option…</option>
+                <option>Discover Scuba Diving</option>
+                <option>Open Water Course</option>
+                <option>Advanced Open Water</option>
+                <option>Rescue Diver Course</option>
+                <option>Divemaster</option>
+                <option>Manta Ray Snorkeling</option>
+                <option>Whale Shark Safari</option>
+                <option>Night Diving</option>
+                <option>Island Hopping / Excursions</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label for="fmsg">Message</label>
+              <textarea id="fmsg" placeholder="Tell us your planned dates, group size, or any questions…"></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FOOTER
+================================================ -->
+<footer class="footer">
+  <div class="footer-wave" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 50" preserveAspectRatio="none">
+      <path fill="rgba(11,61,145,0.25)" d="M0,25 C360,50 1080,0 1440,25 L1440,0 L0,0 Z"/>
+    </svg>
+  </div>
+
+  <div class="footer-body">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="fb-logo">
+            <div class="logo-icon" style="width:42px;height:42px;font-size:1.2rem">🐠</div>
+            <div>
+              <div class="logo-text-main">Reef Rangers</div>
+              <div class="logo-text-sub">Ukulhas · Maldives</div>
+            </div>
+          </div>
+          <p>Your gateway to the underwater world in the heart of North Ari Atoll. PADI certified, eco-conscious, and endlessly passionate about the ocean.</p>
+          <div class="footer-tagline">Dive Deep. Explore More.</div>
+          <div class="socials">
+            <a href="https://instagram.com/reefrangersukulhasmv" target="_blank" rel="noopener" class="soc-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" rel="noopener" class="soc-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/9609966860" target="_blank" rel="noopener" class="soc-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="flinks">
+            <li><a href="#home"><i class="fas fa-chevron-right"></i>Home</a></li>
+            <li><a href="#about"><i class="fas fa-chevron-right"></i>About Us</a></li>
+            <li><a href="#dive-sites"><i class="fas fa-chevron-right"></i>Dive Sites</a></li>
+            <li><a href="#courses"><i class="fas fa-chevron-right"></i>Courses</a></li>
+            <li><a href="#faq"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Experiences</h4>
+          <ul class="flinks">
+            <li><a href="#excursions"><i class="fas fa-chevron-right"></i>Manta Snorkeling</a></li>
+            <li><a href="#excursions"><i class="fas fa-chevron-right"></i>Whale Shark Safari</a></li>
+            <li><a href="#excursions"><i class="fas fa-chevron-right"></i>Night Diving</a></li>
+            <li><a href="#excursions"><i class="fas fa-chevron-right"></i>Island Hopping</a></li>
+            <li><a href="#excursions"><i class="fas fa-chevron-right"></i>Fishing &amp; BBQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="flinks">
+            <li style="color:var(--text-muted);font-size:.88rem;display:flex;gap:.5rem;align-items:flex-start;padding:.1rem 0">
+              <i class="fas fa-map-marker-alt" style="color:var(--accent1);margin-top:3px;flex-shrink:0"></i>
+              Ukulhas Island, North Ari Atoll, Maldives
+            </li>
+            <li><a href="https://wa.me/9609966860"><i class="fab fa-whatsapp"></i>+960 996 6860</a></li>
+            <li><a href="mailto:reefrangersuk@gmail.com"><i class="fas fa-envelope"></i>reefrangersuk@gmail.com</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i>@reefrangersukulhasmv</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Reef Rangers Ukulhas. All Rights Reserved.</p>
+        <p>Made with ❤️ for the ocean &nbsp;·&nbsp; <a href="#contact">Privacy Policy</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ================================================
+     JAVASCRIPT
+================================================ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ---- Navbar scroll ---- */
+  const navbar = document.getElementById('navbar');
+  function onScroll() {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    highlightNav();
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ---- Hamburger / mobile nav ---- */
+  const hamburger  = document.getElementById('hamburger');
+  const mobileNav  = document.getElementById('mobileNav');
+  function toggleMenu(force) {
+    const open = force !== undefined ? force : !hamburger.classList.contains('open');
+    hamburger.classList.toggle('open', open);
+    mobileNav.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  hamburger.addEventListener('click', () => toggleMenu());
+  hamburger.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') toggleMenu(); });
+  document.querySelectorAll('.mnav-link, .mobile-nav .m-book').forEach(a => {
+    a.addEventListener('click', () => toggleMenu(false));
+  });
+
+  /* ---- Bubbles ---- */
+  const bubbleContainer = document.getElementById('bubbles');
+  const bubbleProps = [
+    [8,  '8%',  8,  0  ], [14, '18%', 12, 2  ], [6,  '30%', 9,  1  ],
+    [20, '42%', 15, 4  ], [10, '52%', 10, 6  ], [16, '63%', 13, 3  ],
+    [8,  '73%', 8,  5  ], [12, '83%', 11, 1.5], [6,  '91%', 9,  7  ],
+    [18, '22%', 14, 3.5], [10, '48%', 10, 8  ], [7,  '68%', 8,  2.5],
+    [5,  '35%', 7,  9  ], [22, '55%', 16, 5.5],
+  ];
+  bubbleProps.forEach(([size, left, dur, delay]) => {
+    const b = document.createElement('div');
+    b.className = 'bubble';
+    b.style.cssText = `width:${size}px;height:${size}px;left:${left};animation-duration:${dur}s;animation-delay:${delay}s`;
+    bubbleContainer.appendChild(b);
+  });
+
+  /* ---- Scroll animations (IntersectionObserver) ---- */
+  const animObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fade-up,.fade-left,.fade-right').forEach(el => animObs.observe(el));
+
+  /* ---- Animated counters ---- */
+  function animateCount(el, target, suffix, duration) {
+    const start = performance.now();
+    function step(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.floor(ease * target).toLocaleString() + (suffix || '');
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  const counterObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting || e.target.dataset.counted) return;
+      e.target.dataset.counted = '1';
+      const t = parseInt(e.target.dataset.target, 10);
+      if (!isNaN(t)) animateCount(e.target, t, e.target.dataset.suffix || '', 2200);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.stat-num[data-target]').forEach(el => counterObs.observe(el));
+
+  /* ---- FAQ accordion ---- */
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  /* ---- Testimonials carousel ---- */
+  const wrapper   = document.getElementById('testiWrapper');
+  const track     = document.getElementById('testiTrack');
+  const dotsEl    = document.getElementById('testiDots');
+  const cards     = Array.from(track.querySelectorAll('.testi-card'));
+  let current     = 0;
+  let autoTimer   = null;
+
+  function slidesPerView() {
+    if (window.innerWidth <= 768)  return 1;
+    if (window.innerWidth <= 1024) return 2;
+    return 3;
+  }
+
+  function totalSlides() {
+    return Math.ceil(cards.length / slidesPerView());
+  }
+
+  function setCardWidths() {
+    const sv  = slidesPerView();
+    const gap = 32; // 2rem
+    const w   = wrapper.offsetWidth;
+    const cw  = (w - gap * (sv - 1)) / sv;
+    cards.forEach(c => { c.style.width = cw + 'px'; c.style.flexShrink = '0'; });
+    return cw;
+  }
+
+  function buildDots() {
+    dotsEl.innerHTML = '';
+    const n = totalSlides();
+    for (let i = 0; i < n; i++) {
+      const d = document.createElement('div');
+      d.className = 'tdot' + (i === current ? ' active' : '');
+      d.addEventListener('click', () => goTo(i));
+      dotsEl.appendChild(d);
+    }
+  }
+
+  function updateDots() {
+    dotsEl.querySelectorAll('.tdot').forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  function goTo(idx) {
+    const total = totalSlides();
+    current = ((idx % total) + total) % total;
+    const sv  = slidesPerView();
+    const cw  = setCardWidths();
+    const gap = 32;
+    const offset = current * sv * (cw + gap);
+    track.style.transform = `translateX(-${offset}px)`;
+    updateDots();
+  }
+
+  function startAuto() {
+    stopAuto();
+    autoTimer = setInterval(() => goTo(current + 1), 4500);
+  }
+  function stopAuto() { clearInterval(autoTimer); }
+
+  document.getElementById('prevBtn').addEventListener('click', () => { goTo(current - 1); startAuto(); });
+  document.getElementById('nextBtn').addEventListener('click', () => { goTo(current + 1); startAuto(); });
+  wrapper.addEventListener('mouseenter', stopAuto);
+  wrapper.addEventListener('mouseleave', startAuto);
+
+  // Touch swipe
+  let touchStartX = 0;
+  track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend',   e => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 50) { goTo(dx < 0 ? current + 1 : current - 1); startAuto(); }
+  });
+
+  function initCarousel() {
+    setCardWidths();
+    buildDots();
+    goTo(0);
+    startAuto();
+  }
+
+  initCarousel();
+  window.addEventListener('resize', () => { buildDots(); goTo(0); });
+
+  /* ---- Active nav highlight ---- */
+  const sections  = Array.from(document.querySelectorAll('section[id]'));
+  const navAnchors = document.querySelectorAll('.nav-links a');
+  function highlightNav() {
+    const scrollY = window.scrollY + 120;
+    let active = '';
+    sections.forEach(s => { if (scrollY >= s.offsetTop) active = s.id; });
+    navAnchors.forEach(a => {
+      const match = a.getAttribute('href') === '#' + active;
+      a.style.color = match ? 'var(--accent1)' : '';
+    });
+  }
+
+  /* ---- Contact form ---- */
+  const form      = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('submitBtn');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const orig = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+    submitBtn.style.background = 'linear-gradient(135deg,#25D366,#1da851)';
+    submitBtn.disabled = true;
+    setTimeout(() => {
+      submitBtn.innerHTML = orig;
+      submitBtn.style.background = '';
+      submitBtn.disabled = false;
+      form.reset();
+    }, 3500);
+  });
+
+})();
+</script>
+</body>
+</html>
