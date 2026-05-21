@@ -1,0 +1,19 @@
+{
+  "name": "walkwithshiva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:34017/git/riccardobasilico41-dotcom/Walkwithshiva"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/stitch-sdk": "^0.3.5"
+  }
+}
