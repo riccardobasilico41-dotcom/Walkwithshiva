@@ -4,10 +4,8 @@
  * Generate your key at: stitch.withgoogle.com → Profile → Settings → API Keys → Create Key
  */
 
-import { Stitch } from '@google/stitch-sdk';
+import { stitch } from '@google/stitch-sdk';
 import { writeFile, mkdir } from 'node:fs/promises';
-import { createWriteStream } from 'node:fs';
-import { pipeline } from 'node:stream/promises';
 import path from 'node:path';
 
 const PROJECT_ID = '13184756136394094829';
@@ -22,22 +20,19 @@ const SCREENS = [
 
 async function downloadUrl(url, destPath) {
   const res = await fetch(url);
-  if (!res.ok) throw new Error(`Failed to download ${url}: ${res.status}`);
+  if (!res.ok) throw new Error(`HTTP ${res.status} downloading ${url}`);
   const buffer = await res.arrayBuffer();
   await writeFile(destPath, Buffer.from(buffer));
 }
 
 async function main() {
-  const apiKey = process.env.STITCH_API_KEY;
-  if (!apiKey) {
+  if (!process.env.STITCH_API_KEY) {
     console.error('Error: STITCH_API_KEY is not set.');
     console.error('Generate your key at: stitch.withgoogle.com → Profile → Settings → API Keys → Create Key');
     process.exit(1);
   }
 
-  const stitch = new Stitch({ apiKey });
   const project = stitch.project(PROJECT_ID);
-
   await mkdir('screens', { recursive: true });
 
   for (const screen of SCREENS) {
@@ -48,16 +43,17 @@ async function main() {
       const htmlUrl = await s.getHtml();
       const imageUrl = await s.getImage();
 
-      const htmlPath = path.join('screens', `${screen.name}.html`);
-      const imgPath = path.join('screens', `${screen.name}.png`);
-
       console.log(`  HTML URL: ${htmlUrl}`);
       console.log(`  Image URL: ${imageUrl}`);
 
-      await downloadUrl(htmlUrl, htmlPath);
-      console.log(`  ✓ Saved HTML → ${htmlPath}`);
+      if (htmlUrl) {
+        const htmlPath = path.join('screens', `${screen.name}.html`);
+        await downloadUrl(htmlUrl, htmlPath);
+        console.log(`  ✓ Saved HTML → ${htmlPath}`);
+      }
 
       if (imageUrl) {
+        const imgPath = path.join('screens', `${screen.name}.png`);
         await downloadUrl(imageUrl, imgPath);
         console.log(`  ✓ Saved image → ${imgPath}`);
       }

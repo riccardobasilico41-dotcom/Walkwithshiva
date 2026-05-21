@@ -1,0 +1,286 @@
+{
+  "screenshot": {
+    "name": "projects/13184756136394094829/files/66377c47781249a5b84cb4bf48fad11d",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uhvxn4vmUka8w9rBFg7b_LRgIK81mPk2_kmmgWwnRMxgTFK14fCCOJzNFVMX-kUGRnOcPF0cJYMHy8zGiSJGe7QuXWvZvbqLqWHKjV9V3S89CLJi9os_ahdMCoKlN3nbF-U78c3PD1vGpv1orLgVB7-zeXnbqDnfXdueYCruxM0PqcLmgWThj1cNiC2sKOcw6KTPgRUvg2GJlyfixx_othmqc6Xs6z88PT-2dIiDEE-sG5SrIQQHrVXnsTW"
+  },
+  "htmlCode": {
+    "name": "projects/13184756136394094829/files/3ab6d091a5e84ea0b332837c8b951a53",
+    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzgxZTc5YzhmZjY3ZTQ2N2JhMTMwYTZlYmRlNzY3Y2U1EgsSBxDp_NjM_w4YAZIBJAoKcHJvamVjdF9pZBIWQhQxMzE4NDc1NjEzNjM5NDA5NDgyOQ&filename=&opi=89354086",
+    "mimeType": "text/html"
+  },
+  "id": "39b9bca2f9f54e239fa39006a75ddb74",
+  "generatedBy": "HatterAgent",
+  "width": "2560",
+  "height": "8410",
+  "title": "Home Page Hero Evolution - Clinica S.Egidio",
+  "prompt": "Improve the hero section of the home page. Make the clinic's full logo ({{DATA:IMAGE:IMAGE_11}}) prominent in the center of the first fold. Apply subtle gradients and lighting effects to the background behind the logo to create a 'backlit' or 'glowing' premium feel. The logo should feel integrated into a luxurious, atmospheric setting. Ensure the overall aesthetic remains 'Quiet Luxury Healthcare' with organic, rounded shapes and a sophisticated color palette based on {{DATA:DESIGN_SYSTEM:DESIGN_SYSTEM_1}}. Keep the high-end medical sanctuary vibe.",
+  "name": "projects/13184756136394094829/screens/39b9bca2f9f54e239fa39006a75ddb74",
+  "theme": {
+    "colorMode": "LIGHT",
+    "font": "LIBRE_CASLON_TEXT",
+    "roundness": "ROUND_FULL",
+    "customColor": "#3d3635",
+    "headlineFont": "LIBRE_CASLON_TEXT",
+    "bodyFont": "MANROPE",
+    "labelFont": "MANROPE",
+    "namedColors": {
+      "surface": "#fff8f2",
+      "secondary": "#5f5e5b",
+      "on_primary_container": "#a99f9d",
+      "on_secondary": "#ffffff",
+      "surface_tint": "#655c5b",
+      "on_error": "#ffffff",
+      "surface_container": "#f4ede4",
+      "surface_container_high": "#eee7df",
+      "inverse_primary": "#cfc4c2",
+      "secondary_container": "#e5e2dd",
+      "on_primary_fixed_variant": "#4d4544",
+      "secondary_fixed_dim": "#c9c6c2",
+      "on_secondary_fixed_variant": "#474743",
+      "on_primary_fixed": "#201a19",
+      "background": "#fff8f2",
+      "primary_fixed": "#ece0de",
+      "on_secondary_fixed": "#1c1c19",
+      "error": "#ba1a1a",
+      "primary_fixed_dim": "#cfc4c2",
+      "outline_variant": "#d1c4c2",
+      "on_background": "#1e1b16",
+      "on_secondary_container": "#656461",
+      "primary_container": "#3d3635",
+      "tertiary": "#1d241a",
+      "surface_container_low": "#faf2ea",
+      "on_tertiary": "#ffffff",
+      "secondary_fixed": "#e5e2dd",
+      "on_tertiary_fixed": "#161e13",
+      "primary": "#272120",
+      "surface_dim": "#e0d9d1",
+      "surface_container_lowest": "#ffffff",
+      "outline": "#7f7573",
+      "on_surface_variant": "#4e4543",
+      "tertiary_fixed_dim": "#c0c9b9",
+      "on_primary": "#ffffff",
+      "surface_container_highest": "#e9e1d9",
+      "on_surface": "#1e1b16",
+      "on_error_container": "#93000a",
+      "on_tertiary_container": "#9ba494",
+      "error_container": "#ffdad6",
+      "surface_variant": "#e9e1d9",
+      "tertiary_fixed": "#dce5d4",
+      "on_tertiary_fixed_variant": "#41493d",
+      "tertiary_container": "#323a2e",
+      "inverse_surface": "#33302a",
+      "inverse_on_surface": "#f7f0e7",
+      "surface_bright": "#fff8f2"
+    },
+    "designMd": "---\nname: Nocturnal Serenity\ncolors:\n  surface: '#fff8f2'\n  surface-dim: '#e0d9d1'\n  surface-bright: '#fff8f2'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#faf2ea'\n  surface-container: '#f4ede4'\n  surface-container-high: '#eee7df'\n  surface-container-highest: '#e9e1d9'\n  on-surface: '#1e1b16'\n  on-surface-variant: '#4e4543'\n  inverse-surface: '#33302a'\n  inverse-on-surface: '#f7f0e7'\n  outline: '#7f7573'\n  outline-variant: '#d1c4c2'\n  surface-tint: '#655c5b'\n  primary: '#272120'\n  on-primary: '#ffffff'\n  primary-container: '#3d3635'\n  on-primary-container: '#a99f9d'\n  inverse-primary: '#cfc4c2'\n  secondary: '#5f5e5b'\n  on-secondary: '#ffffff'\n  secondary-container: '#e5e2dd'\n  on-secondary-container: '#656461'\n  tertiary: '#1d241a'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#323a2e'\n  on-tertiary-container: '#9ba494'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ece0de'\n  primary-fixed-dim: '#cfc4c2'\n  on-primary-fixed: '#201a19'\n  on-primary-fixed-variant: '#4d4544'\n  secondary-fixed: '#e5e2dd'\n  secondary-fixed-dim: '#c9c6c2'\n  on-secondary-fixed: '#1c1c19'\n  on-secondary-fixed-variant: '#474743'\n  tertiary-fixed: '#dce5d4'\n  tertiary-fixed-dim: '#c0c9b9'\n  on-tertiary-fixed: '#161e13'\n  on-tertiary-fixed-variant: '#41493d'\n  background: '#fff8f2'\n  on-background: '#1e1b16'\n  surface-variant: '#e9e1d9'\ntypography:\n  display-lg:\n    fontFamily: Libre Caslon Text\n    fontSize: 48px\n    fontWeight: '400'\n    lineHeight: '1.1'\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Libre Caslon Text\n    fontSize: 32px\n    fontWeight: '400'\n    lineHeight: '1.2'\n  headline-lg-mobile:\n    fontFamily: Libre Caslon Text\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: '1.2'\n  headline-md:\n    fontFamily: Libre Caslon Text\n    fontSize: 24px\n    fontWeight: '400'\n    lineHeight: '1.3'\n  body-lg:\n    fontFamily: Manrope\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  body-md:\n    fontFamily: Manrope\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  label-md:\n    fontFamily: Manrope\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: '1.4'\n    letterSpacing: 0.05em\n  label-sm:\n    fontFamily: Manrope\n    fontSize: 12px\n    fontWeight: '500'\n    lineHeight: '1.4'\nrounded:\n  sm: 0.5rem\n  DEFAULT: 1rem\n  md: 1.5rem\n  lg: 2rem\n  xl: 3rem\n  full: 9999px\nspacing:\n  unit: 8px\n  container-padding-desktop: 80px\n  container-padding-mobile: 24px\n  gutter: 32px\n  section-gap: 120px\n---\n\n## Brand & Style\nThe design system evolves into **Soft Minimalist Luxury**, specifically tailored for high-end, boutique healthcare. The brand personality is empathetic, discreet, and profoundly calm, moving away from rigid architectural lines toward organic harmony. \n\nThe aesthetic evokes the atmosphere of a private sanctuary—a place of restoration rather than clinical intervention. It balances the warmth of hospitality with the precision of medicine. The emotional response is one of immediate nervous system regulation: trust, silence, and curated care. \n\nDesign pillars:\n- **Organic Sophistication:** Fluid shapes and generous white space.\n- **Tactile Softness:** Elements feel touchable and gentle, avoiding any visual \"points\" or harshness.\n- **Serene Clarity:** Information is layered with breathing room, ensuring the user never feels overwhelmed.\n\n## Colors\nThe palette shifts from high-contrast architectural tones to a \"Quiet Luxury\" healthcare spectrum. \n\n- **Primary (Deep Chocolate):** Used for primary typography and brand-defining moments. It provides a grounded, stable foundation more sophisticated than pure black.\n- **Secondary (Travertine):** The primary background surface color. It is warmer and more human than stark white, reducing eye strain and evoking premium materials.\n- **Tertiary (Muted Sage):** Introduced as the \"healing\" accent. Used for success states, active selections, and healthcare-specific callouts. It is psychologically soothing and natural.\n- **Neutral (Muted Clay):** Used for secondary UI elements, borders, and subtle layering. It bridges the gap between the dark chocolate and the light travertine.\n\nThe color mode is strictly **light** to maintain a sense of cleanliness and \"daylight\" essential for healthcare environments.\n\n## Typography\nThe typography strategy pairs traditional editorial authority with modern functional clarity.\n\n- **Headlines (Libre Caslon Text):** Brings a sense of established trust and literary grace. Headlines should use \"sentence case\" to feel more approachable and less like a corporate brochure. \n- **Body & UI (Manrope):** Chosen for its modern, refined, and highly legible characteristics. It provides a technical balance to the classical serif, ensuring medical data and instructions are easy to digest.\n- **Rhythm:** Generous line heights are enforced to ensure \"breathability.\" Large display type should be used sparingly for evocative moments, while H2 and H3 levels guide the user through clinical information.\n\n## Layout & Spacing\nThe layout philosophy moves away from a rigid \"real estate grid\" toward a **Soft Fluid System**. \n\n- **The Breathable Grid:** Use a 12-column grid for desktop with unusually wide margins (80px) to center the focus and create a sense of exclusivity.\n- **Asymmetric Balance:** Elements should not always be perfectly centered; use whitespace to \"push\" content into focus, mimicking the intentional placement of objects in a high-end clinic.\n- **Vertical Rhythm:** Increase vertical spacing between sections (120px) to prevent the \"clutter\" often found in healthcare portals. \n- **Mobile Adaptivity:** On mobile, prioritize a single-column flow with large touch targets, maintaining 24px side margins to ensure the interface feels spacious even on small screens.\n\n## Elevation & Depth\nDepth is created through **Tonal Layering and Soft Ambient Shadows**, avoiding the harshness of traditional elevation.\n\n- **Surface Stacking:** Use slight variations of the Secondary (Travertine) and Neutral (Clay) colors to define depth. A card may be a slightly lighter tint of Travertine than the page background.\n- **Ambient Shadows:** Shadows must be nearly imperceptible. Use a very large blur radius (30px+) with extremely low opacity (3-5%) and a hint of the Primary Chocolate color in the shadow tint to keep it warm.\n- **Glassmorphism:** Use subtle backdrop blurs on navigation bars to maintain a sense of translucency and light, suggesting an airy, open environment.\n\n## Shapes\nThe shape language is defined by **Full Organic Roundness**. \n\n- **Primary Radius:** All primary containers, cards, and buttons use a \"Pill\" or extremely large radius (minimum 32px for cards) to remove any visual tension.\n- **The \"Circle\" Motif:** Icons and avatars should be contained within circles.\n- **Organic Containers:** Decorative elements or image masks should utilize soft, pebble-like organic shapes rather than perfect geometric circles or squares.\n\n## Components\n- **Buttons:** Primary buttons are pill-shaped, using the Deep Chocolate background with Travertine text. Secondary buttons use a Muted Clay border with no fill. Interaction should feel \"soft\"—avoiding abrupt color changes in favor of gentle fades.\n- **Input Fields:** Fields are softly rounded (16px radius) with a Travertine-tinted background. Labels (Manrope) sit clearly above the field. Focus states use a subtle Sage border.\n- **Cards:** Medical information cards use a large 32px corner radius. They feature zero border, relying instead on the soft ambient shadow or a slight tonal shift in background color to define boundaries.\n- **Chips/Badges:** Used for status (e.g., \"Confirmed,\" \"Healing\"). These are fully pill-shaped, using the Muted Sage color at low opacity with dark sage text.\n- **Progress Indicators:** Use soft, thick lines with rounded caps. The movement should be slow and fluid.\n- **Additional Component - The \"Sanctuary\" Header:** A specialized component for patient profiles that uses a large organic image mask and Libre Caslon Text to make the patient feel seen as a person, not a record.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#3d3635",
+    "overrideSecondaryColor": "#f5f2ed",
+    "overrideTertiaryColor": "#8b9485",
+    "overrideNeutralColor": "#d6cfc7",
+    "spacingScale": 2,
+    "typography": {
+      "body-md": {
+        "fontFamily": "Manrope",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "1.6"
+      },
+      "headline-lg-mobile": {
+        "fontFamily": "Libre Caslon Text",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "lineHeight": "1.2"
+      },
+      "body-lg": {
+        "fontFamily": "Manrope",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "1.6"
+      },
+      "headline-md": {
+        "fontFamily": "Libre Caslon Text",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "lineHeight": "1.3"
+      },
+      "label-md": {
+        "fontFamily": "Manrope",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "lineHeight": "1.4",
+        "letterSpacing": "0.05em"
+      },
+      "label-sm": {
+        "fontFamily": "Manrope",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "lineHeight": "1.4"
+      },
+      "headline-lg": {
+        "fontFamily": "Libre Caslon Text",
+        "fontSize": "32px",
+        "fontWeight": "400",
+        "lineHeight": "1.2"
+      },
+      "display-lg": {
+        "fontFamily": "Libre Caslon Text",
+        "fontSize": "48px",
+        "fontWeight": "400",
+        "lineHeight": "1.1",
+        "letterSpacing": "-0.02em"
+      }
+    },
+    "spacing": {
+      "container-padding-desktop": "80px",
+      "unit": "8px",
+      "section-gap": "120px",
+      "gutter": "32px",
+      "container-padding-mobile": "24px"
+    },
+    "headlineFontFamily": "Libre Caslon Text",
+    "bodyFontFamily": "Manrope",
+    "labelFontFamily": "Manrope"
+  },
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN",
+  "screenMetadata": {
+    "agentType": "PRO_AGENT",
+    "status": "COMPLETE"
+  },
+  "designSystem": {
+    "name": "assets/913c7f36cbf14f39906937a5b84b7967",
+    "designSystem": {
+      "displayName": "Nocturnal Serenity",
+      "styleGuidelines": "## Brand & Style\nThe design system evolves into **Soft Minimalist Luxury**, specifically tailored for high-end, boutique healthcare. The brand personality is empathetic, discreet, and profoundly calm, moving away from rigid architectural lines toward organic harmony. \n\nThe aesthetic evokes the atmosphere of a private sanctuary—a place of restoration rather than clinical intervention. It balances the warmth of hospitality with the precision of medicine. The emotional response is one of immediate nervous system regulation: trust, silence, and curated care. \n\nDesign pillars:\n- **Organic Sophistication:** Fluid shapes and generous white space.\n- **Tactile Softness:** Elements feel touchable and gentle, avoiding any visual \"points\" or harshness.\n- **Serene Clarity:** Information is layered with breathing room, ensuring the user never feels overwhelmed.\n\n## Layout & Spacing\nThe layout philosophy moves away from a rigid \"real estate grid\" toward a **Soft Fluid System**. \n\n- **The Breathable Grid:** Use a 12-column grid for desktop with unusually wide margins (80px) to center the focus and create a sense of exclusivity.\n- **Asymmetric Balance:** Elements should not always be perfectly centered; use whitespace to \"push\" content into focus, mimicking the intentional placement of objects in a high-end clinic.\n- **Vertical Rhythm:** Increase vertical spacing between sections (120px) to prevent the \"clutter\" often found in healthcare portals. \n- **Mobile Adaptivity:** On mobile, prioritize a single-column flow with large touch targets, maintaining 24px side margins to ensure the interface feels spacious even on small screens.\n\n## Elevation & Depth\nDepth is created through **Tonal Layering and Soft Ambient Shadows**, avoiding the harshness of traditional elevation.\n\n- **Surface Stacking:** Use slight variations of the Secondary (Travertine) and Neutral (Clay) colors to define depth. A card may be a slightly lighter tint of Travertine than the page background.\n- **Ambient Shadows:** Shadows must be nearly imperceptible. Use a very large blur radius (30px+) with extremely low opacity (3-5%) and a hint of the Primary Chocolate color in the shadow tint to keep it warm.\n- **Glassmorphism:** Use subtle backdrop blurs on navigation bars to maintain a sense of translucency and light, suggesting an airy, open environment.\n\n## Components\n- **Buttons:** Primary buttons are pill-shaped, using the Deep Chocolate background with Travertine text. Secondary buttons use a Muted Clay border with no fill. Interaction should feel \"soft\"—avoiding abrupt color changes in favor of gentle fades.\n- **Input Fields:** Fields are softly rounded (16px radius) with a Travertine-tinted background. Labels (Manrope) sit clearly above the field. Focus states use a subtle Sage border.\n- **Cards:** Medical information cards use a large 32px corner radius. They feature zero border, relying instead on the soft ambient shadow or a slight tonal shift in background color to define boundaries.\n- **Chips/Badges:** Used for status (e.g., \"Confirmed,\" \"Healing\"). These are fully pill-shaped, using the Muted Sage color at low opacity with dark sage text.\n- **Progress Indicators:** Use soft, thick lines with rounded caps. The movement should be slow and fluid.\n- **Additional Component - The \"Sanctuary\" Header:** A specialized component for patient profiles that uses a large organic image mask and Libre Caslon Text to make the patient feel seen as a person, not a record.",
+      "theme": {
+        "colorMode": "LIGHT",
+        "font": "LIBRE_CASLON_TEXT",
+        "roundness": "ROUND_FULL",
+        "customColor": "#3d3635",
+        "headlineFont": "LIBRE_CASLON_TEXT",
+        "bodyFont": "MANROPE",
+        "labelFont": "MANROPE",
+        "namedColors": {
+          "secondary_container": "#e5e2dd",
+          "inverse_primary": "#cfc4c2",
+          "secondary_fixed_dim": "#c9c6c2",
+          "on_secondary_fixed_variant": "#474743",
+          "on_primary_fixed_variant": "#4d4544",
+          "secondary": "#5f5e5b",
+          "surface": "#fff8f2",
+          "surface_container": "#f4ede4",
+          "on_error": "#ffffff",
+          "surface_container_high": "#eee7df",
+          "on_secondary": "#ffffff",
+          "surface_tint": "#655c5b",
+          "on_primary_container": "#a99f9d",
+          "outline_variant": "#d1c4c2",
+          "tertiary": "#1d241a",
+          "primary_container": "#3d3635",
+          "on_secondary_container": "#656461",
+          "on_background": "#1e1b16",
+          "on_tertiary_fixed": "#161e13",
+          "primary": "#272120",
+          "surface_dim": "#e0d9d1",
+          "surface_container_low": "#faf2ea",
+          "on_tertiary": "#ffffff",
+          "secondary_fixed": "#e5e2dd",
+          "primary_fixed": "#ece0de",
+          "background": "#fff8f2",
+          "on_primary_fixed": "#201a19",
+          "on_secondary_fixed": "#1c1c19",
+          "primary_fixed_dim": "#cfc4c2",
+          "error": "#ba1a1a",
+          "on_error_container": "#93000a",
+          "on_surface": "#1e1b16",
+          "on_tertiary_container": "#9ba494",
+          "error_container": "#ffdad6",
+          "surface_container_lowest": "#ffffff",
+          "on_primary": "#ffffff",
+          "surface_container_highest": "#e9e1d9",
+          "outline": "#7f7573",
+          "on_surface_variant": "#4e4543",
+          "tertiary_fixed_dim": "#c0c9b9",
+          "inverse_surface": "#33302a",
+          "tertiary_container": "#323a2e",
+          "inverse_on_surface": "#f7f0e7",
+          "surface_bright": "#fff8f2",
+          "tertiary_fixed": "#dce5d4",
+          "surface_variant": "#e9e1d9",
+          "on_tertiary_fixed_variant": "#41493d"
+        },
+        "designMd": "---\nname: Nocturnal Serenity\ncolors:\n  surface: '#fff8f2'\n  surface-dim: '#e0d9d1'\n  surface-bright: '#fff8f2'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#faf2ea'\n  surface-container: '#f4ede4'\n  surface-container-high: '#eee7df'\n  surface-container-highest: '#e9e1d9'\n  on-surface: '#1e1b16'\n  on-surface-variant: '#4e4543'\n  inverse-surface: '#33302a'\n  inverse-on-surface: '#f7f0e7'\n  outline: '#7f7573'\n  outline-variant: '#d1c4c2'\n  surface-tint: '#655c5b'\n  primary: '#272120'\n  on-primary: '#ffffff'\n  primary-container: '#3d3635'\n  on-primary-container: '#a99f9d'\n  inverse-primary: '#cfc4c2'\n  secondary: '#5f5e5b'\n  on-secondary: '#ffffff'\n  secondary-container: '#e5e2dd'\n  on-secondary-container: '#656461'\n  tertiary: '#1d241a'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#323a2e'\n  on-tertiary-container: '#9ba494'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ece0de'\n  primary-fixed-dim: '#cfc4c2'\n  on-primary-fixed: '#201a19'\n  on-primary-fixed-variant: '#4d4544'\n  secondary-fixed: '#e5e2dd'\n  secondary-fixed-dim: '#c9c6c2'\n  on-secondary-fixed: '#1c1c19'\n  on-secondary-fixed-variant: '#474743'\n  tertiary-fixed: '#dce5d4'\n  tertiary-fixed-dim: '#c0c9b9'\n  on-tertiary-fixed: '#161e13'\n  on-tertiary-fixed-variant: '#41493d'\n  background: '#fff8f2'\n  on-background: '#1e1b16'\n  surface-variant: '#e9e1d9'\ntypography:\n  display-lg:\n    fontFamily: Libre Caslon Text\n    fontSize: 48px\n    fontWeight: '400'\n    lineHeight: '1.1'\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Libre Caslon Text\n    fontSize: 32px\n    fontWeight: '400'\n    lineHeight: '1.2'\n  headline-lg-mobile:\n    fontFamily: Libre Caslon Text\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: '1.2'\n  headline-md:\n    fontFamily: Libre Caslon Text\n    fontSize: 24px\n    fontWeight: '400'\n    lineHeight: '1.3'\n  body-lg:\n    fontFamily: Manrope\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  body-md:\n    fontFamily: Manrope\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: '1.6'\n  label-md:\n    fontFamily: Manrope\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: '1.4'\n    letterSpacing: 0.05em\n  label-sm:\n    fontFamily: Manrope\n    fontSize: 12px\n    fontWeight: '500'\n    lineHeight: '1.4'\nrounded:\n  sm: 0.5rem\n  DEFAULT: 1rem\n  md: 1.5rem\n  lg: 2rem\n  xl: 3rem\n  full: 9999px\nspacing:\n  unit: 8px\n  container-padding-desktop: 80px\n  container-padding-mobile: 24px\n  gutter: 32px\n  section-gap: 120px\n---\n\n## Brand & Style\nThe design system evolves into **Soft Minimalist Luxury**, specifically tailored for high-end, boutique healthcare. The brand personality is empathetic, discreet, and profoundly calm, moving away from rigid architectural lines toward organic harmony. \n\nThe aesthetic evokes the atmosphere of a private sanctuary—a place of restoration rather than clinical intervention. It balances the warmth of hospitality with the precision of medicine. The emotional response is one of immediate nervous system regulation: trust, silence, and curated care. \n\nDesign pillars:\n- **Organic Sophistication:** Fluid shapes and generous white space.\n- **Tactile Softness:** Elements feel touchable and gentle, avoiding any visual \"points\" or harshness.\n- **Serene Clarity:** Information is layered with breathing room, ensuring the user never feels overwhelmed.\n\n## Colors\nThe palette shifts from high-contrast architectural tones to a \"Quiet Luxury\" healthcare spectrum. \n\n- **Primary (Deep Chocolate):** Used for primary typography and brand-defining moments. It provides a grounded, stable foundation more sophisticated than pure black.\n- **Secondary (Travertine):** The primary background surface color. It is warmer and more human than stark white, reducing eye strain and evoking premium materials.\n- **Tertiary (Muted Sage):** Introduced as the \"healing\" accent. Used for success states, active selections, and healthcare-specific callouts. It is psychologically soothing and natural.\n- **Neutral (Muted Clay):** Used for secondary UI elements, borders, and subtle layering. It bridges the gap between the dark chocolate and the light travertine.\n\nThe color mode is strictly **light** to maintain a sense of cleanliness and \"daylight\" essential for healthcare environments.\n\n## Typography\nThe typography strategy pairs traditional editorial authority with modern functional clarity.\n\n- **Headlines (Libre Caslon Text):** Brings a sense of established trust and literary grace. Headlines should use \"sentence case\" to feel more approachable and less like a corporate brochure. \n- **Body & UI (Manrope):** Chosen for its modern, refined, and highly legible characteristics. It provides a technical balance to the classical serif, ensuring medical data and instructions are easy to digest.\n- **Rhythm:** Generous line heights are enforced to ensure \"breathability.\" Large display type should be used sparingly for evocative moments, while H2 and H3 levels guide the user through clinical information.\n\n## Layout & Spacing\nThe layout philosophy moves away from a rigid \"real estate grid\" toward a **Soft Fluid System**. \n\n- **The Breathable Grid:** Use a 12-column grid for desktop with unusually wide margins (80px) to center the focus and create a sense of exclusivity.\n- **Asymmetric Balance:** Elements should not always be perfectly centered; use whitespace to \"push\" content into focus, mimicking the intentional placement of objects in a high-end clinic.\n- **Vertical Rhythm:** Increase vertical spacing between sections (120px) to prevent the \"clutter\" often found in healthcare portals. \n- **Mobile Adaptivity:** On mobile, prioritize a single-column flow with large touch targets, maintaining 24px side margins to ensure the interface feels spacious even on small screens.\n\n## Elevation & Depth\nDepth is created through **Tonal Layering and Soft Ambient Shadows**, avoiding the harshness of traditional elevation.\n\n- **Surface Stacking:** Use slight variations of the Secondary (Travertine) and Neutral (Clay) colors to define depth. A card may be a slightly lighter tint of Travertine than the page background.\n- **Ambient Shadows:** Shadows must be nearly imperceptible. Use a very large blur radius (30px+) with extremely low opacity (3-5%) and a hint of the Primary Chocolate color in the shadow tint to keep it warm.\n- **Glassmorphism:** Use subtle backdrop blurs on navigation bars to maintain a sense of translucency and light, suggesting an airy, open environment.\n\n## Shapes\nThe shape language is defined by **Full Organic Roundness**. \n\n- **Primary Radius:** All primary containers, cards, and buttons use a \"Pill\" or extremely large radius (minimum 32px for cards) to remove any visual tension.\n- **The \"Circle\" Motif:** Icons and avatars should be contained within circles.\n- **Organic Containers:** Decorative elements or image masks should utilize soft, pebble-like organic shapes rather than perfect geometric circles or squares.\n\n## Components\n- **Buttons:** Primary buttons are pill-shaped, using the Deep Chocolate background with Travertine text. Secondary buttons use a Muted Clay border with no fill. Interaction should feel \"soft\"—avoiding abrupt color changes in favor of gentle fades.\n- **Input Fields:** Fields are softly rounded (16px radius) with a Travertine-tinted background. Labels (Manrope) sit clearly above the field. Focus states use a subtle Sage border.\n- **Cards:** Medical information cards use a large 32px corner radius. They feature zero border, relying instead on the soft ambient shadow or a slight tonal shift in background color to define boundaries.\n- **Chips/Badges:** Used for status (e.g., \"Confirmed,\" \"Healing\"). These are fully pill-shaped, using the Muted Sage color at low opacity with dark sage text.\n- **Progress Indicators:** Use soft, thick lines with rounded caps. The movement should be slow and fluid.\n- **Additional Component - The \"Sanctuary\" Header:** A specialized component for patient profiles that uses a large organic image mask and Libre Caslon Text to make the patient feel seen as a person, not a record.",
+        "colorVariant": "FIDELITY",
+        "overridePrimaryColor": "#3d3635",
+        "overrideSecondaryColor": "#f5f2ed",
+        "overrideTertiaryColor": "#8b9485",
+        "overrideNeutralColor": "#d6cfc7",
+        "spacingScale": 2,
+        "typography": {
+          "headline-lg-mobile": {
+            "fontFamily": "Libre Caslon Text",
+            "fontSize": "28px",
+            "fontWeight": "400",
+            "lineHeight": "1.2"
+          },
+          "body-md": {
+            "fontFamily": "Manrope",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "1.6"
+          },
+          "label-md": {
+            "fontFamily": "Manrope",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "lineHeight": "1.4",
+            "letterSpacing": "0.05em"
+          },
+          "label-sm": {
+            "fontFamily": "Manrope",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "1.4"
+          },
+          "body-lg": {
+            "fontFamily": "Manrope",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "1.6"
+          },
+          "headline-md": {
+            "fontFamily": "Libre Caslon Text",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "lineHeight": "1.3"
+          },
+          "headline-lg": {
+            "fontFamily": "Libre Caslon Text",
+            "fontSize": "32px",
+            "fontWeight": "400",
+            "lineHeight": "1.2"
+          },
+          "display-lg": {
+            "fontFamily": "Libre Caslon Text",
+            "fontSize": "48px",
+            "fontWeight": "400",
+            "lineHeight": "1.1",
+            "letterSpacing": "-0.02em"
+          }
+        },
+        "spacing": {
+          "unit": "8px",
+          "container-padding-desktop": "80px",
+          "container-padding-mobile": "24px",
+          "gutter": "32px",
+          "section-gap": "120px"
+        },
+        "headlineFontFamily": "Libre Caslon Text",
+        "bodyFontFamily": "Manrope",
+        "labelFontFamily": "Manrope"
+      }
+    },
+    "version": "1"
+  }
+}

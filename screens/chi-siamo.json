@@ -1,0 +1,286 @@
+{
+  "screenshot": {
+    "name": "projects/13184756136394094829/files/89a2fc3f0b5e471393065058aea836c8",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/ADBb0uiGWteshjH-HkQAVakOMJHKYvF9cPGA259vcTgaCQCTBuWwCw_7iLrQXz4BZX2EF2VYfHpBdTrZtj8WVoE0XczBVXdVkDSX1Kz0uQ23dCb-ZW0AX_wh4NqbwY9Byb7eF3w4NtCbei2c00k7bbrccBzBAiKgIiaDyBEKNyvoLsZyOR901bCwkEHMaQKtjhC4qeG8BAMMJK6X6d2OfJJo5ywkwPSnsYrLEkcLncOrrLPsZ00aFSZ8pKMwk0He"
+  },
+  "htmlCode": {
+    "name": "projects/13184756136394094829/files/dd14fdca6b0948ec975f12f684719256",
+    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzFiYWY4YTk3ZmIzYTRlN2VhNGE0OTc5OGY4OTRhNjc2EgsSBxDp_NjM_w4YAZIBJAoKcHJvamVjdF9pZBIWQhQxMzE4NDc1NjEzNjM5NDA5NDgyOQ&filename=&opi=89354086",
+    "mimeType": "text/html"
+  },
+  "id": "4661eebe8293450fb541dad753b28b73",
+  "generatedBy": "HatterAgent",
+  "width": "2560",
+  "height": "8640",
+  "title": "Chi Siamo - Clinica S.Egidio",
+  "prompt": "Traduci l'intera pagina in italiano. 'Our Vision' diventa 'La Nostra Visione', 'A Legacy of Dedication' diventa 'Un'Eredità di Dedizione', 'Core Values' diventa 'Valori Fondamentali'. Traduci tutti i paragrafi narrativi e i titoli delle sezioni. Mantieni lo stile editoriale.",
+  "name": "projects/13184756136394094829/screens/4661eebe8293450fb541dad753b28b73",
+  "theme": {
+    "colorMode": "LIGHT",
+    "font": "LIBRE_CASLON_TEXT",
+    "roundness": "ROUND_FOUR",
+    "customColor": "#3d2b1f",
+    "headlineFont": "LIBRE_CASLON_TEXT",
+    "bodyFont": "MANROPE",
+    "labelFont": "MANROPE",
+    "namedColors": {
+      "primary_fixed": "#fbddca",
+      "surface_container_low": "#fef2e5",
+      "tertiary_container": "#2f2f2d",
+      "inverse_surface": "#362f27",
+      "background": "#fff8f3",
+      "on_primary_fixed": "#28180d",
+      "on_tertiary_fixed_variant": "#474744",
+      "primary_fixed_dim": "#dec1af",
+      "surface_container_lowest": "#ffffff",
+      "surface": "#fff8f3",
+      "on_error_container": "#93000a",
+      "on_primary_container": "#ac9181",
+      "tertiary": "#1a1a18",
+      "surface_variant": "#ece1d4",
+      "surface_container_high": "#f2e6da",
+      "primary_container": "#3d2b1f",
+      "inverse_on_surface": "#fbefe2",
+      "surface_dim": "#e3d8cc",
+      "surface_container": "#f8ecdf",
+      "tertiary_fixed_dim": "#c8c6c2",
+      "surface_container_highest": "#ece1d4",
+      "outline": "#81756e",
+      "on_background": "#201b13",
+      "error": "#ba1a1a",
+      "inverse_primary": "#dec1af",
+      "surface_bright": "#fff8f3",
+      "on_surface": "#201b13",
+      "secondary_fixed_dim": "#e9c176",
+      "on_surface_variant": "#4f453f",
+      "secondary_container": "#fed488",
+      "on_secondary_container": "#785a1a",
+      "error_container": "#ffdad6",
+      "on_tertiary_container": "#989693",
+      "on_error": "#ffffff",
+      "on_secondary_fixed": "#261900",
+      "primary": "#26170c",
+      "on_tertiary": "#ffffff",
+      "secondary": "#775a19",
+      "on_primary": "#ffffff",
+      "on_primary_fixed_variant": "#574335",
+      "on_tertiary_fixed": "#1c1c19",
+      "surface_tint": "#705a4c",
+      "secondary_fixed": "#ffdea5",
+      "outline_variant": "#d2c4bc",
+      "tertiary_fixed": "#e5e2de",
+      "on_secondary": "#ffffff",
+      "on_secondary_fixed_variant": "#5d4201"
+    },
+    "designMd": "---\nname: Quiet Luxury Wellness\ncolors:\n  surface: '#fff8f3'\n  surface-dim: '#e3d8cc'\n  surface-bright: '#fff8f3'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#fef2e5'\n  surface-container: '#f8ecdf'\n  surface-container-high: '#f2e6da'\n  surface-container-highest: '#ece1d4'\n  on-surface: '#201b13'\n  on-surface-variant: '#4f453f'\n  inverse-surface: '#362f27'\n  inverse-on-surface: '#fbefe2'\n  outline: '#81756e'\n  outline-variant: '#d2c4bc'\n  surface-tint: '#705a4c'\n  primary: '#26170c'\n  on-primary: '#ffffff'\n  primary-container: '#3d2b1f'\n  on-primary-container: '#ac9181'\n  inverse-primary: '#dec1af'\n  secondary: '#775a19'\n  on-secondary: '#ffffff'\n  secondary-container: '#fed488'\n  on-secondary-container: '#785a1a'\n  tertiary: '#1a1a18'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#2f2f2d'\n  on-tertiary-container: '#989693'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#fbddca'\n  primary-fixed-dim: '#dec1af'\n  on-primary-fixed: '#28180d'\n  on-primary-fixed-variant: '#574335'\n  secondary-fixed: '#ffdea5'\n  secondary-fixed-dim: '#e9c176'\n  on-secondary-fixed: '#261900'\n  on-secondary-fixed-variant: '#5d4201'\n  tertiary-fixed: '#e5e2de'\n  tertiary-fixed-dim: '#c8c6c2'\n  on-tertiary-fixed: '#1c1c19'\n  on-tertiary-fixed-variant: '#474744'\n  background: '#fff8f3'\n  on-background: '#201b13'\n  surface-variant: '#ece1d4'\ntypography:\n  display-lg:\n    fontFamily: Libre Caslon Text\n    fontSize: 48px\n    fontWeight: '400'\n    lineHeight: 56px\n    letterSpacing: -0.01em\n  headline-lg:\n    fontFamily: Libre Caslon Text\n    fontSize: 32px\n    fontWeight: '400'\n    lineHeight: 40px\n  headline-lg-mobile:\n    fontFamily: Libre Caslon Text\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n  headline-md:\n    fontFamily: Libre Caslon Text\n    fontSize: 24px\n    fontWeight: '400'\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Manrope\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Manrope\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  label-md:\n    fontFamily: Manrope\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: 20px\n    letterSpacing: 0.05em\n  label-sm:\n    fontFamily: Manrope\n    fontSize: 12px\n    fontWeight: '500'\n    lineHeight: 16px\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  margin-desktop: 80px\n  margin-mobile: 20px\n  gutter: 24px\n  section-gap: 120px\n  component-gap: 16px\n---\n\n## Brand & Style\nThe design system is rooted in the concept of \"Quiet Luxury\"—an aesthetic that prioritizes high-end materiality, serenity, and understated professionalism. It is designed for a discerning clientele seeking healthcare and wellness services in an environment that feels more like a boutique hotel or a private club than a clinical space.\n\nThe visual style blends **Minimalism** with **Tactile/Skeuomorphic** accents. While the layouts are clean and spacious, the digital elements mimic the physical environment's rich textures: the warmth of fluted oak, the smoothness of travertine stone, and the soft glow of hidden cove lighting. The goal is to evoke a sense of calm, trust, and absolute precision.\n\n## Colors\nThe palette is directly inspired by the architectural renders and brand identity. \n- **Primary (Deep Umber):** Used for primary headings and high-contrast text. It provides the \"anchor\" of professional authority.\n- **Secondary (Muted Gold):** Reserved for interactive accents, subtle dividers, and premium labeling. It should be used sparingly to maintain its impact.\n- **Tertiary (Travertine Stone):** The primary background color. It is warmer than pure white, reducing eye strain and creating a welcoming, \"airy\" atmosphere.\n- **Neutral (Warm Slate):** Used for secondary text, metadata, and borders to maintain a soft, low-contrast visual hierarchy.\n\nThe default mode is light to reflect the brightly lit, sun-drenched interiors of the clinic.\n\n## Typography\nThe typographic pairing balances heritage with modern efficiency. \n- **Libre Caslon Text** is used for all headlines. It mirrors the logo's elegance and conveys a sense of established medical expertise.\n- **Manrope** is the workhorse for body copy and UI elements. Its clean, geometric forms provide high readability and a contemporary edge that feels \"high-tech\" yet approachable.\n\nSpecial attention should be paid to letter spacing on labels (uppercase with slight tracking) to evoke the feel of premium signage found in high-end co-working spaces.\n\n## Layout & Spacing\nThis design system utilizes a **fixed-width grid** for desktop (12 columns, 1200px max-width) centered in the viewport to maintain a sense of curated, editorial composition.\n\nThe spacing philosophy is \"breathable.\" Large vertical gaps (`section-gap`) between content blocks prevent the UI from feeling cluttered or clinical. \n- **Desktop:** Generous 80px side margins to frame the content.\n- **Tablet:** 8-column grid with 40px margins.\n- **Mobile:** 4-column grid with 20px margins, emphasizing vertical stacking and large touch targets.\n\n## Elevation & Depth\nDepth is created through **Tonal Layers** and **Subtle Inner Glows** rather than aggressive dropshadows. \n- **Surface Levels:** The base is Stone (`#F4F1ED`). Secondary containers use a slightly lighter off-white or a very subtle wood-grain texture overlay.\n- **Soft Shadows:** When necessary, use extremely diffused shadows (Blur: 30px, Opacity: 4%) tinted with the Primary color (`#3D2B1F`) to feel like ambient light hitting a physical surface.\n- **Interactive Depth:** Buttons and cards should appear to slightly lift via a subtle scale increase (1.02x) rather than a heavy shadow, maintaining the \"quiet\" nature of the luxury aesthetic.\n\n## Shapes\nThe shape language is **Soft (Level 1)**. \nWhile the architectural renders show curved sofas and rounded reception desks, the overall structural lines remain precise and professional. \n- Standard buttons and input fields use a 4px (`0.25rem`) radius.\n- Large cards and featured imagery use a 8px (`0.5rem`) radius.\n- Use \"Organic Circular\" shapes only for specific accent elements, such as profile avatars or iconography frames, to mimic the circular mirrors and light fixtures in the renders.\n\n## Components\n- **Buttons:** Primary buttons are solid Deep Umber with white or gold text. Secondary buttons are outlined in Gold with no fill. Interaction should be fluid—avoid abrupt color changes; use soft fades.\n- **Inputs:** Fields should have a bottom-border-only style or a very light Stone stroke, feeling integrated into the background. Focus states should transition the border to Gold.\n- **Cards:** Use cards to group service offerings or practitioner bios. Cards should have no border, using a slightly different tonal background (Off-white) and a very subtle inner-glow to define the edges.\n- **Chips:** Used for \"Specialties\" or \"Availability.\" These should be pill-shaped with a light Umber tint or Gold outline, using the `label-sm` typography.\n- **Navigation:** A minimalist top bar with ample height (80px+). Use the Primary color for the logo and the Gold accent for the \"Book Appointment\" CTA.\n- **Dividers:** Use very thin (1px) lines in a faded Slate color, or use \"Negative Space\" as the primary divider between sections.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#3d2b1f",
+    "overrideSecondaryColor": "#c5a059",
+    "overrideTertiaryColor": "#f4f1ed",
+    "overrideNeutralColor": "#70685e",
+    "spacingScale": 2,
+    "typography": {
+      "headline-md": {
+        "fontFamily": "Libre Caslon Text",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "lineHeight": "32px"
+      },
+      "body-lg": {
+        "fontFamily": "Manrope",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "28px"
+      },
+      "display-lg": {
+        "fontFamily": "Libre Caslon Text",
+        "fontSize": "48px",
+        "fontWeight": "400",
+        "lineHeight": "56px",
+        "letterSpacing": "-0.01em"
+      },
+      "headline-lg-mobile": {
+        "fontFamily": "Libre Caslon Text",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "lineHeight": "36px"
+      },
+      "body-md": {
+        "fontFamily": "Manrope",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px"
+      },
+      "headline-lg": {
+        "fontFamily": "Libre Caslon Text",
+        "fontSize": "32px",
+        "fontWeight": "400",
+        "lineHeight": "40px"
+      },
+      "label-sm": {
+        "fontFamily": "Manrope",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "lineHeight": "16px"
+      },
+      "label-md": {
+        "fontFamily": "Manrope",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "lineHeight": "20px",
+        "letterSpacing": "0.05em"
+      }
+    },
+    "spacing": {
+      "gutter": "24px",
+      "section-gap": "120px",
+      "component-gap": "16px",
+      "margin-desktop": "80px",
+      "margin-mobile": "20px"
+    },
+    "headlineFontFamily": "Libre Caslon Text",
+    "bodyFontFamily": "Manrope",
+    "labelFontFamily": "Manrope"
+  },
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN",
+  "screenMetadata": {
+    "agentType": "PRO_AGENT",
+    "status": "COMPLETE"
+  },
+  "designSystem": {
+    "name": "assets/e4b212a04add450db02f599f773428b1",
+    "designSystem": {
+      "displayName": "Quiet Luxury Wellness",
+      "styleGuidelines": "## Brand & Style\nThe design system is rooted in the concept of \"Quiet Luxury\"—an aesthetic that prioritizes high-end materiality, serenity, and understated professionalism. It is designed for a discerning clientele seeking healthcare and wellness services in an environment that feels more like a boutique hotel or a private club than a clinical space.\n\nThe visual style blends **Minimalism** with **Tactile/Skeuomorphic** accents. While the layouts are clean and spacious, the digital elements mimic the physical environment's rich textures: the warmth of fluted oak, the smoothness of travertine stone, and the soft glow of hidden cove lighting. The goal is to evoke a sense of calm, trust, and absolute precision.\n\n## Layout & Spacing\nThis design system utilizes a **fixed-width grid** for desktop (12 columns, 1200px max-width) centered in the viewport to maintain a sense of curated, editorial composition.\n\nThe spacing philosophy is \"breathable.\" Large vertical gaps (`section-gap`) between content blocks prevent the UI from feeling cluttered or clinical. \n- **Desktop:** Generous 80px side margins to frame the content.\n- **Tablet:** 8-column grid with 40px margins.\n- **Mobile:** 4-column grid with 20px margins, emphasizing vertical stacking and large touch targets.\n\n## Elevation & Depth\nDepth is created through **Tonal Layers** and **Subtle Inner Glows** rather than aggressive dropshadows. \n- **Surface Levels:** The base is Stone (`#F4F1ED`). Secondary containers use a slightly lighter off-white or a very subtle wood-grain texture overlay.\n- **Soft Shadows:** When necessary, use extremely diffused shadows (Blur: 30px, Opacity: 4%) tinted with the Primary color (`#3D2B1F`) to feel like ambient light hitting a physical surface.\n- **Interactive Depth:** Buttons and cards should appear to slightly lift via a subtle scale increase (1.02x) rather than a heavy shadow, maintaining the \"quiet\" nature of the luxury aesthetic.\n\n## Components\n- **Buttons:** Primary buttons are solid Deep Umber with white or gold text. Secondary buttons are outlined in Gold with no fill. Interaction should be fluid—avoid abrupt color changes; use soft fades.\n- **Inputs:** Fields should have a bottom-border-only style or a very light Stone stroke, feeling integrated into the background. Focus states should transition the border to Gold.\n- **Cards:** Use cards to group service offerings or practitioner bios. Cards should have no border, using a slightly different tonal background (Off-white) and a very subtle inner-glow to define the edges.\n- **Chips:** Used for \"Specialties\" or \"Availability.\" These should be pill-shaped with a light Umber tint or Gold outline, using the `label-sm` typography.\n- **Navigation:** A minimalist top bar with ample height (80px+). Use the Primary color for the logo and the Gold accent for the \"Book Appointment\" CTA.\n- **Dividers:** Use very thin (1px) lines in a faded Slate color, or use \"Negative Space\" as the primary divider between sections.",
+      "theme": {
+        "colorMode": "LIGHT",
+        "font": "LIBRE_CASLON_TEXT",
+        "roundness": "ROUND_FOUR",
+        "customColor": "#3d2b1f",
+        "headlineFont": "LIBRE_CASLON_TEXT",
+        "bodyFont": "MANROPE",
+        "labelFont": "MANROPE",
+        "namedColors": {
+          "on_secondary_container": "#785a1a",
+          "on_error": "#ffffff",
+          "on_secondary_fixed": "#261900",
+          "error_container": "#ffdad6",
+          "on_tertiary_container": "#989693",
+          "on_surface_variant": "#4f453f",
+          "on_surface": "#201b13",
+          "secondary_fixed_dim": "#e9c176",
+          "secondary_container": "#fed488",
+          "error": "#ba1a1a",
+          "inverse_primary": "#dec1af",
+          "surface_bright": "#fff8f3",
+          "on_secondary_fixed_variant": "#5d4201",
+          "on_secondary": "#ffffff",
+          "outline_variant": "#d2c4bc",
+          "secondary_fixed": "#ffdea5",
+          "tertiary_fixed": "#e5e2de",
+          "on_primary": "#ffffff",
+          "on_primary_fixed_variant": "#574335",
+          "on_tertiary_fixed": "#1c1c19",
+          "surface_tint": "#705a4c",
+          "on_tertiary": "#ffffff",
+          "primary": "#26170c",
+          "secondary": "#775a19",
+          "surface_container_lowest": "#ffffff",
+          "surface": "#fff8f3",
+          "primary_fixed_dim": "#dec1af",
+          "inverse_surface": "#362f27",
+          "on_tertiary_fixed_variant": "#474744",
+          "on_primary_fixed": "#28180d",
+          "background": "#fff8f3",
+          "surface_container_low": "#fef2e5",
+          "primary_fixed": "#fbddca",
+          "tertiary_container": "#2f2f2d",
+          "tertiary_fixed_dim": "#c8c6c2",
+          "surface_container_highest": "#ece1d4",
+          "outline": "#81756e",
+          "on_background": "#201b13",
+          "inverse_on_surface": "#fbefe2",
+          "primary_container": "#3d2b1f",
+          "surface_container": "#f8ecdf",
+          "surface_dim": "#e3d8cc",
+          "surface_container_high": "#f2e6da",
+          "on_primary_container": "#ac9181",
+          "on_error_container": "#93000a",
+          "tertiary": "#1a1a18",
+          "surface_variant": "#ece1d4"
+        },
+        "designMd": "---\nname: Quiet Luxury Wellness\ncolors:\n  surface: '#fff8f3'\n  surface-dim: '#e3d8cc'\n  surface-bright: '#fff8f3'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#fef2e5'\n  surface-container: '#f8ecdf'\n  surface-container-high: '#f2e6da'\n  surface-container-highest: '#ece1d4'\n  on-surface: '#201b13'\n  on-surface-variant: '#4f453f'\n  inverse-surface: '#362f27'\n  inverse-on-surface: '#fbefe2'\n  outline: '#81756e'\n  outline-variant: '#d2c4bc'\n  surface-tint: '#705a4c'\n  primary: '#26170c'\n  on-primary: '#ffffff'\n  primary-container: '#3d2b1f'\n  on-primary-container: '#ac9181'\n  inverse-primary: '#dec1af'\n  secondary: '#775a19'\n  on-secondary: '#ffffff'\n  secondary-container: '#fed488'\n  on-secondary-container: '#785a1a'\n  tertiary: '#1a1a18'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#2f2f2d'\n  on-tertiary-container: '#989693'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#fbddca'\n  primary-fixed-dim: '#dec1af'\n  on-primary-fixed: '#28180d'\n  on-primary-fixed-variant: '#574335'\n  secondary-fixed: '#ffdea5'\n  secondary-fixed-dim: '#e9c176'\n  on-secondary-fixed: '#261900'\n  on-secondary-fixed-variant: '#5d4201'\n  tertiary-fixed: '#e5e2de'\n  tertiary-fixed-dim: '#c8c6c2'\n  on-tertiary-fixed: '#1c1c19'\n  on-tertiary-fixed-variant: '#474744'\n  background: '#fff8f3'\n  on-background: '#201b13'\n  surface-variant: '#ece1d4'\ntypography:\n  display-lg:\n    fontFamily: Libre Caslon Text\n    fontSize: 48px\n    fontWeight: '400'\n    lineHeight: 56px\n    letterSpacing: -0.01em\n  headline-lg:\n    fontFamily: Libre Caslon Text\n    fontSize: 32px\n    fontWeight: '400'\n    lineHeight: 40px\n  headline-lg-mobile:\n    fontFamily: Libre Caslon Text\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n  headline-md:\n    fontFamily: Libre Caslon Text\n    fontSize: 24px\n    fontWeight: '400'\n    lineHeight: 32px\n  body-lg:\n    fontFamily: Manrope\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Manrope\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  label-md:\n    fontFamily: Manrope\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: 20px\n    letterSpacing: 0.05em\n  label-sm:\n    fontFamily: Manrope\n    fontSize: 12px\n    fontWeight: '500'\n    lineHeight: 16px\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  margin-desktop: 80px\n  margin-mobile: 20px\n  gutter: 24px\n  section-gap: 120px\n  component-gap: 16px\n---\n\n## Brand & Style\nThe design system is rooted in the concept of \"Quiet Luxury\"—an aesthetic that prioritizes high-end materiality, serenity, and understated professionalism. It is designed for a discerning clientele seeking healthcare and wellness services in an environment that feels more like a boutique hotel or a private club than a clinical space.\n\nThe visual style blends **Minimalism** with **Tactile/Skeuomorphic** accents. While the layouts are clean and spacious, the digital elements mimic the physical environment's rich textures: the warmth of fluted oak, the smoothness of travertine stone, and the soft glow of hidden cove lighting. The goal is to evoke a sense of calm, trust, and absolute precision.\n\n## Colors\nThe palette is directly inspired by the architectural renders and brand identity. \n- **Primary (Deep Umber):** Used for primary headings and high-contrast text. It provides the \"anchor\" of professional authority.\n- **Secondary (Muted Gold):** Reserved for interactive accents, subtle dividers, and premium labeling. It should be used sparingly to maintain its impact.\n- **Tertiary (Travertine Stone):** The primary background color. It is warmer than pure white, reducing eye strain and creating a welcoming, \"airy\" atmosphere.\n- **Neutral (Warm Slate):** Used for secondary text, metadata, and borders to maintain a soft, low-contrast visual hierarchy.\n\nThe default mode is light to reflect the brightly lit, sun-drenched interiors of the clinic.\n\n## Typography\nThe typographic pairing balances heritage with modern efficiency. \n- **Libre Caslon Text** is used for all headlines. It mirrors the logo's elegance and conveys a sense of established medical expertise.\n- **Manrope** is the workhorse for body copy and UI elements. Its clean, geometric forms provide high readability and a contemporary edge that feels \"high-tech\" yet approachable.\n\nSpecial attention should be paid to letter spacing on labels (uppercase with slight tracking) to evoke the feel of premium signage found in high-end co-working spaces.\n\n## Layout & Spacing\nThis design system utilizes a **fixed-width grid** for desktop (12 columns, 1200px max-width) centered in the viewport to maintain a sense of curated, editorial composition.\n\nThe spacing philosophy is \"breathable.\" Large vertical gaps (`section-gap`) between content blocks prevent the UI from feeling cluttered or clinical. \n- **Desktop:** Generous 80px side margins to frame the content.\n- **Tablet:** 8-column grid with 40px margins.\n- **Mobile:** 4-column grid with 20px margins, emphasizing vertical stacking and large touch targets.\n\n## Elevation & Depth\nDepth is created through **Tonal Layers** and **Subtle Inner Glows** rather than aggressive dropshadows. \n- **Surface Levels:** The base is Stone (`#F4F1ED`). Secondary containers use a slightly lighter off-white or a very subtle wood-grain texture overlay.\n- **Soft Shadows:** When necessary, use extremely diffused shadows (Blur: 30px, Opacity: 4%) tinted with the Primary color (`#3D2B1F`) to feel like ambient light hitting a physical surface.\n- **Interactive Depth:** Buttons and cards should appear to slightly lift via a subtle scale increase (1.02x) rather than a heavy shadow, maintaining the \"quiet\" nature of the luxury aesthetic.\n\n## Shapes\nThe shape language is **Soft (Level 1)**. \nWhile the architectural renders show curved sofas and rounded reception desks, the overall structural lines remain precise and professional. \n- Standard buttons and input fields use a 4px (`0.25rem`) radius.\n- Large cards and featured imagery use a 8px (`0.5rem`) radius.\n- Use \"Organic Circular\" shapes only for specific accent elements, such as profile avatars or iconography frames, to mimic the circular mirrors and light fixtures in the renders.\n\n## Components\n- **Buttons:** Primary buttons are solid Deep Umber with white or gold text. Secondary buttons are outlined in Gold with no fill. Interaction should be fluid—avoid abrupt color changes; use soft fades.\n- **Inputs:** Fields should have a bottom-border-only style or a very light Stone stroke, feeling integrated into the background. Focus states should transition the border to Gold.\n- **Cards:** Use cards to group service offerings or practitioner bios. Cards should have no border, using a slightly different tonal background (Off-white) and a very subtle inner-glow to define the edges.\n- **Chips:** Used for \"Specialties\" or \"Availability.\" These should be pill-shaped with a light Umber tint or Gold outline, using the `label-sm` typography.\n- **Navigation:** A minimalist top bar with ample height (80px+). Use the Primary color for the logo and the Gold accent for the \"Book Appointment\" CTA.\n- **Dividers:** Use very thin (1px) lines in a faded Slate color, or use \"Negative Space\" as the primary divider between sections.",
+        "colorVariant": "FIDELITY",
+        "overridePrimaryColor": "#3d2b1f",
+        "overrideSecondaryColor": "#c5a059",
+        "overrideTertiaryColor": "#f4f1ed",
+        "overrideNeutralColor": "#70685e",
+        "spacingScale": 2,
+        "typography": {
+          "headline-md": {
+            "fontFamily": "Libre Caslon Text",
+            "fontSize": "24px",
+            "fontWeight": "400",
+            "lineHeight": "32px"
+          },
+          "headline-lg-mobile": {
+            "fontFamily": "Libre Caslon Text",
+            "fontSize": "28px",
+            "fontWeight": "400",
+            "lineHeight": "36px"
+          },
+          "display-lg": {
+            "fontFamily": "Libre Caslon Text",
+            "fontSize": "48px",
+            "fontWeight": "400",
+            "lineHeight": "56px",
+            "letterSpacing": "-0.01em"
+          },
+          "body-lg": {
+            "fontFamily": "Manrope",
+            "fontSize": "18px",
+            "fontWeight": "400",
+            "lineHeight": "28px"
+          },
+          "label-md": {
+            "fontFamily": "Manrope",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "lineHeight": "20px",
+            "letterSpacing": "0.05em"
+          },
+          "label-sm": {
+            "fontFamily": "Manrope",
+            "fontSize": "12px",
+            "fontWeight": "500",
+            "lineHeight": "16px"
+          },
+          "body-md": {
+            "fontFamily": "Manrope",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "24px"
+          },
+          "headline-lg": {
+            "fontFamily": "Libre Caslon Text",
+            "fontSize": "32px",
+            "fontWeight": "400",
+            "lineHeight": "40px"
+          }
+        },
+        "spacing": {
+          "component-gap": "16px",
+          "margin-desktop": "80px",
+          "margin-mobile": "20px",
+          "gutter": "24px",
+          "section-gap": "120px"
+        },
+        "headlineFontFamily": "Libre Caslon Text",
+        "bodyFontFamily": "Manrope",
+        "labelFontFamily": "Manrope"
+      }
+    },
+    "version": "1"
+  }
+}
