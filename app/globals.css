@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-travertino: #EDE8DF;
+    --color-sabbia: #C9BB9F;
+    --color-crema: #F8F4ED;
+    --color-smeraldo: #1D3D2F;
+    --color-oro: #B8965A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: #1D3D2F;
+    color: #F8F4ED;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 bg-smeraldo text-crema font-sans text-xs tracking-ultra uppercase transition-all duration-700 ease-luxury hover:bg-smeraldo-dark hover:tracking-wider;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 border border-smeraldo text-smeraldo font-sans text-xs tracking-ultra uppercase transition-all duration-700 ease-luxury hover:bg-smeraldo hover:text-crema;
+  }
+
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 border border-crema/40 text-crema font-sans text-xs tracking-ultra uppercase transition-all duration-700 ease-luxury hover:bg-crema hover:text-smeraldo;
+  }
+
+  .section-label {
+    @apply font-sans text-xs tracking-ultra uppercase text-oro mb-6 block;
+  }
+
+  .gold-divider {
+    @apply block w-12 h-px bg-oro my-6;
+  }
+
+  .prose-clinic {
+    @apply font-sans text-base leading-relaxed text-stone-600;
+  }
+
+  .card-service {
+    @apply relative bg-crema border border-sabbia/30 p-10 transition-all duration-500 ease-luxury hover:shadow-[0_20px_60px_rgba(29,61,47,0.08)] hover:-translate-y-1;
+  }
+}
+
+@layer utilities {
+  .text-display {
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+  }
+
+  .text-display-sm {
+    font-size: clamp(2.5rem, 5.5vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .text-heading-xl {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+  }
+
+  .text-heading-lg {
+    font-size: clamp(1.75rem, 3vw, 2.75rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  .text-heading-md {
+    font-size: clamp(1.375rem, 2.5vw, 2rem);
+    line-height: 1.25;
+  }
+
+  .text-heading-sm {
+    font-size: clamp(1.25rem, 2vw, 1.625rem);
+    line-height: 1.3;
+  }
+}
