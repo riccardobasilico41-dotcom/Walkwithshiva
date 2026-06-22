@@ -32,7 +32,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        serif: ['var(--font-cormorant)', 'Georgia', 'serif'],
+        serif: ['Canela', 'Cormorant Garamond', 'Georgia', 'serif'],
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       letterSpacing: {
